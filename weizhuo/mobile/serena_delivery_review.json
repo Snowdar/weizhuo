@@ -1,0 +1,26 @@
+{
+  "criterion": "平静、端正、自然饱满、中等而利落；不亢奋、不妩媚、不气声；不后期变速或变调",
+  "humanAuthorization": "用户认可适中版开局/行动试听后，授权大面积更新；另明确 Serena 使用 All-in，VITS 使用全下",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-4bit",
+  "revision": "f35faf19b0cc2160865af64ecf0f22f83d335135",
+  "method": "complete sentences first; measured quiet contextual prefix cuts; actual combination reviews; no system fill",
+  "terminology": {
+    "semanticAction": "全下",
+    "spokenSerena": "All-in",
+    "otherEngines": "全下",
+    "prefixPlayers": 40
+  },
+  "selectedRecordings": 775,
+  "recipes": 792,
+  "segments": 499,
+  "wavFiles": 1223,
+  "bytes": 125991164,
+  "coverage": {
+    "cases": 4391,
+    "realEventSentences": 419,
+    "missing": [],
+    "passed": true
+  },
+  "runtimeCases": 602,
+  "limits": "602 actual waveform checks are finite samples. Other amounts retain contextual fallback and are not individually listening approved. Protected human-approved recordings remain unchanged. Qwen weights are development-only."
+}

@@ -1,0 +1,200 @@
+{
+  "sources": [
+    {
+      "id": "give1",
+      "text": "一号玩家给了二号玩家一分。",
+      "pieces": [
+        "一号玩家给了二号玩家",
+        "一分"
+      ]
+    },
+    {
+      "id": "give100",
+      "text": "一号玩家给了二号玩家一百分。",
+      "pieces": [
+        "一号玩家给了二号玩家",
+        "一百分"
+      ]
+    },
+    {
+      "id": "call1280",
+      "text": "三号玩家跟注一千二百八十分。",
+      "pieces": [
+        "三号玩家跟注",
+        "一千二百八十分"
+      ]
+    },
+    {
+      "id": "raise100",
+      "text": "二号玩家加注一百分。",
+      "pieces": [
+        "二号玩家加注",
+        "一百分"
+      ]
+    },
+    {
+      "id": "blind20",
+      "text": "四号玩家闷注二十分。",
+      "pieces": [
+        "四号玩家闷注",
+        "二十分"
+      ]
+    },
+    {
+      "id": "bet60",
+      "text": "三号玩家下注六十分。",
+      "pieces": [
+        "三号玩家下注",
+        "六十分"
+      ]
+    },
+    {
+      "id": "turn",
+      "text": "现在请一号玩家行动。",
+      "pieces": [
+        "现在请一号玩家行动"
+      ]
+    },
+    {
+      "id": "settle",
+      "text": "三号玩家弃牌。本局已结算，二号玩家获得六十分。",
+      "pieces": [
+        "三号玩家弃牌本局已结算二号玩家获得六十分"
+      ]
+    },
+    {
+      "id": "reference-raise1280",
+      "text": "二号玩家加注一千二百八十分。",
+      "pieces": [
+        "二号玩家加注一千二百八十分"
+      ]
+    },
+    {
+      "id": "reference-call100",
+      "text": "三号玩家跟注一百分。",
+      "pieces": [
+        "三号玩家跟注一百分"
+      ]
+    },
+    {
+      "id": "reference-blind100",
+      "text": "四号玩家闷注一百分。",
+      "pieces": [
+        "四号玩家闷注一百分"
+      ]
+    },
+    {
+      "id": "reference-bet20",
+      "text": "三号玩家下注二十分。",
+      "pieces": [
+        "三号玩家下注二十分"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "free-give-one",
+      "parts": [
+        [
+          "give100",
+          0
+        ],
+        [
+          "give1",
+          1
+        ]
+      ],
+      "reference": "give1"
+    },
+    {
+      "id": "free-give-hundred",
+      "parts": [
+        [
+          "give1",
+          0
+        ],
+        [
+          "give100",
+          1
+        ]
+      ],
+      "reference": "give100"
+    },
+    {
+      "id": "holdem-raise-1280",
+      "parts": [
+        [
+          "raise100",
+          0
+        ],
+        [
+          "call1280",
+          1
+        ]
+      ],
+      "reference": "reference-raise1280"
+    },
+    {
+      "id": "holdem-call-100",
+      "parts": [
+        [
+          "call1280",
+          0
+        ],
+        [
+          "raise100",
+          1
+        ]
+      ],
+      "reference": "reference-call100"
+    },
+    {
+      "id": "zhajinhua-blind-100",
+      "parts": [
+        [
+          "blind20",
+          0
+        ],
+        [
+          "give100",
+          1
+        ]
+      ],
+      "reference": "reference-blind100"
+    },
+    {
+      "id": "holdem-bet-20",
+      "parts": [
+        [
+          "bet60",
+          0
+        ],
+        [
+          "blind20",
+          1
+        ]
+      ],
+      "reference": "reference-bet20"
+    },
+    {
+      "id": "turn-whole",
+      "parts": [
+        [
+          "turn",
+          0
+        ]
+      ],
+      "reference": "turn"
+    },
+    {
+      "id": "fold-settle-whole",
+      "parts": [
+        [
+          "settle",
+          0
+        ]
+      ],
+      "reference": "settle"
+    }
+  ]
+}

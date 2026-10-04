@@ -1,0 +1,31 @@
+[tool.briefcase]
+project_name = "Weizhuo"
+bundle = "com.snowdar"
+version = "0.1.1"
+author = "Snowdar"
+author_email = "snowdar@qq.com"
+license = "LicenseRef-Weizhuo-NonCommercial-NoGambling-1.0"
+license-files = ["../../LICENSE"]
+
+[tool.briefcase.app.weizhuomobile]
+build = 48
+formal_name = "围桌"
+description = "同 Wi-Fi 的线下游戏记分帮手"
+icon = "src/weizhuomobile/runtime/resources/app-icon"
+sources = ["src/weizhuomobile"]
+requires = []
+
+[tool.briefcase.app.weizhuomobile.android]
+version_code = 48
+requires = ["toga-android==0.5.3"]
+min_os_version = "24"
+android_manifest_application_attrs_extra_content = 'android:usesCleartextTraffic="true"'
+permission."android.permission.INTERNET" = true
+permission."android.permission.ACCESS_NETWORK_STATE" = true
+permission."android.permission.ACCESS_WIFI_STATE" = true
+
+[tool.briefcase.app.weizhuomobile.iOS]
+requires = ["toga-iOS==0.5.3"]
+min_os_version = "15.0"
+info."NSLocalNetworkUsageDescription" = "房主在同一 Wi-Fi 为朋友提供牌桌、积分和房间服务。"
+info."NSAppTransportSecurity".NSAllowsLocalNetworking = true

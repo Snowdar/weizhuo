@@ -1,0 +1,60 @@
+// Exercise accepted/failed results and delayed, out-of-order state responses.
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const source = fs.readFileSync('static/app.js', 'utf8');
+const scoreFunction=source.split('\n').find(x=>x.startsWith('function nextScoreValue('));const scoreContext=vm.createContext({});vm.runInContext(scoreFunction,scoreContext);assert.equal(scoreContext.nextScoreValue('10',-1,'10','100'),10);assert.equal(scoreContext.nextScoreValue('100',1,'10','100'),100);assert.equal(scoreContext.nextScoreValue('-1',-1,'-10','100'),-2);assert.equal(scoreContext.nextScoreValue('10',1,'0','100',5),15);
+const functions = source.split('\n').filter(x => x.startsWith('async function act(') || x.startsWith('async function poll(') || x.startsWith('async function readRoomState(') || x.startsWith('function keyboardSessionActive(')).join('\n');
+function deferred() { let resolve; const promise = new Promise(r => { resolve = r; }); return {promise, resolve}; }
+function harness() {
+  const context = vm.createContext({console, setTimeout, clearTimeout, roomSound:{consume(){}}, setNetworkStatus(){}, renderRoom(){}, remember(){}, toast(){}, window:{},editableSelector:'input,textarea',document:{activeElement:null}, $:()=>({}), crypto:{randomUUID:()=> 'test'}});
+  vm.runInContext(`const pollFlights=new Map();let room='TEST01',token='host',base='/',state=null,last='',busy=false,removed=false,stateGeneration=0; ${functions}`, context);
+  context.fetchWithTimeout=(...args)=>context.fetch(...args);
+  context.syncCompareDialog = s => { context.displayed = s; };
+  return context;
+}
+const response = (version, phase) => ({ok:true,json:async()=>({room:'TEST01',version,phase,isHost:true,game:'zhajinhua',players:[]})});
+(async()=>{
+  let interval, offlinePolls=0;
+  const offlineContext=vm.createContext({navigator:{onLine:false},document:{hidden:false,querySelector:()=>null},room:'LAN01',init(){},setInterval:fn=>{interval=fn},poll:async()=>{offlinePolls++}});
+  vm.runInContext(source.split('\n').find(line=>line.startsWith('let backgroundPolling=')),offlineContext);
+  await interval();assert.equal(offlinePolls,1,'offline Internet flag must not block reachable LAN polling');
+  offlineContext.document.hidden=true;await interval();assert.equal(offlinePolls,1,'offline LAN still respects background pause');
+  const merged=harness(), delayed=deferred();let requests=0;merged.fetch=()=>{requests++;return delayed.promise};const one=merged.poll(),two=merged.poll();assert.equal(requests,1,'concurrent state refreshes share one request');delayed.resolve(response(1,'playing'));await Promise.all([one,two]);await merged.poll();assert.equal(requests,2,'completed refresh releases its slot');
+  const slow=harness(), waiting=deferred();let slowHint,notice='';slow.setTimeout=f=>{slowHint=f;return 1};slow.clearTimeout=()=>{};slow.setNetworkStatus=text=>{notice=text};slow.fetch=()=>waiting.promise;const pending=slow.poll();slowHint();assert.match(notice,/同步较慢/);waiting.resolve(response(1,'playing'));await pending;assert.equal(notice,'','successful sync clears slow notice');
+  const retry=harness();let attempts=0;retry.fetch=()=>{attempts++;throw Error('network down')};await retry.poll();retry.fetch=async()=>{attempts++;return response(1,'playing')};await retry.poll();assert.equal(attempts,2,'failure releases the pending slot for retry');
+  const c = harness(), old = deferred(), fresh = deferred();
+  let calls=0, closed=false;
+  c.fetch=()=> (++calls===1 ? old.promise : fresh.promise);
+  c.request=async()=>({});
+  const stalePoll=c.poll();
+  const action=c.act('resolve', {id:'winner'}, ()=>{closed=true});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(closed,true,'close immediately after accepted POST, before refresh finishes');
+  old.resolve(response(1,'comparing'));await stalePoll;
+  assert.equal(c.displayed,undefined,'pre-confirmation response must not reopen comparison');
+  fresh.resolve(response(2,'playing'));assert.equal(await action,true);
+  c.fetch=async()=>response(1,'comparing');await c.poll();
+  assert.equal(c.displayed.phase,'playing','older version must not overwrite current state');
+  const failed=harness();let failedClosed=false;
+  failed.request=async()=>{throw Error('失败')};
+  assert.equal(await failed.act('resolve',{},()=>{failedClosed=true}),false);
+  assert.equal(failedClosed,false,'failed confirmation must retain dialog');
+  const closeSource=source.slice(source.indexOf('function dismissCompareDialog('),source.indexOf('// Keep the host'));
+  const closeContext=vm.createContext({});vm.runInContext(closeSource,closeContext);
+  const events=[];closeContext.dismissCompareDialog({open:true,close(){events.push('close')},remove(){events.push('remove')}});
+  assert.deepEqual(events,['close','remove']);
+  const networkSource=source.slice(source.indexOf('async function fetchWithTimeout('),source.indexOf('function setNetworkStatus('));
+  const network=vm.createContext({AbortController,setTimeout,clearTimeout});vm.runInContext(networkSource,network);
+  network.fetch=async()=>({ok:true,status:200,json:async()=>({accepted:true})});
+  assert.equal((await (await network.fetchWithTimeout('/test')).json()).accepted,true);
+  let callsBeforeTimeout=0,signal;
+  network.fetch=async(url,options)=>{callsBeforeTimeout++;signal=options.signal;return new Promise(()=>{})};
+  await assert.rejects(network.fetchWithTimeout('/test',{method:'POST'},15),/连接超时/);
+  assert.equal(signal.aborted,true);assert.equal(callsBeforeTimeout,1,'a timed-out mutation must not resend');
+  network.fetch=async()=>({ok:true,status:200,json:()=>new Promise(()=>{})});
+  await assert.rejects(network.fetchWithTimeout('/test',{},15),/连接超时/,'body reading also has a deadline');
+  network.fetch=async()=>{const error=Error('offline');error.name='TypeError';throw error};
+  await assert.rejects(network.fetchWithTimeout('/test'),/无法连接服务/);
+  console.log('通过：确认立即关闭、失败保留、旧响应忽略、旧版本忽略、原生弹窗关闭。');
+})().catch(e=>{console.error(e);process.exitCode=1});

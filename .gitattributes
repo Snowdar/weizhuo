@@ -1,0 +1,18 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.command text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+# Preserve upstream vendor formatting and installation records.
+weizhuo/vendor/** -whitespace
+weizhuo/vendor/**/RECORD -text
+
+*.wav binary
+*.onnx binary
+*.fst binary
+
+# Keep upstream dictionaries and approved PCM byte-for-byte on every OS.
+resources/voice/** -text -whitespace

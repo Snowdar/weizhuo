@@ -1,0 +1,754 @@
+{
+  "sources": [
+    {
+      "id": "flow-1",
+      "text": "一号玩家给了二号玩家一百分。",
+      "pieces": [
+        "一号玩家给了二号玩家一百分"
+      ]
+    },
+    {
+      "id": "flow-2",
+      "text": "二号玩家请求收取一百二十五分，请确认。",
+      "pieces": [
+        "二号玩家请求收取一百二十五分请确认"
+      ]
+    },
+    {
+      "id": "flow-3",
+      "text": "二号玩家收了一号玩家的一百二十五分。",
+      "pieces": [
+        "二号玩家收了一号玩家的一百二十五分"
+      ]
+    },
+    {
+      "id": "flow-4",
+      "text": "三号玩家给了二号玩家一分。",
+      "pieces": [
+        "三号玩家给了二号玩家一分"
+      ]
+    },
+    {
+      "id": "flow-5",
+      "text": "本局开始，祝大家玩得开心。",
+      "pieces": [
+        "本局开始祝大家玩得开心"
+      ]
+    },
+    {
+      "id": "flow-6",
+      "text": "现在请一号玩家行动。",
+      "pieces": [
+        "现在请一号玩家行动"
+      ]
+    },
+    {
+      "id": "flow-7",
+      "text": "一号玩家闷注十分。",
+      "pieces": [
+        "一号玩家闷注十分"
+      ]
+    },
+    {
+      "id": "flow-8",
+      "text": "二号玩家看牌。",
+      "pieces": [
+        "二号玩家看牌"
+      ]
+    },
+    {
+      "id": "flow-9",
+      "text": "二号玩家跟注二十分。",
+      "pieces": [
+        "二号玩家跟注二十分"
+      ]
+    },
+    {
+      "id": "flow-10",
+      "text": "三号玩家弃牌。",
+      "pieces": [
+        "三号玩家弃牌"
+      ]
+    },
+    {
+      "id": "flow-11",
+      "text": "一号玩家看牌。",
+      "pieces": [
+        "一号玩家看牌"
+      ]
+    },
+    {
+      "id": "flow-12",
+      "text": "一号玩家比牌四十分。",
+      "pieces": [
+        "一号玩家比牌四十分"
+      ]
+    },
+    {
+      "id": "flow-13",
+      "text": "等待房主确认比牌赢家。",
+      "pieces": [
+        "等待房主确认比牌赢家"
+      ]
+    },
+    {
+      "id": "flow-14",
+      "text": "二号玩家比牌出局。",
+      "pieces": [
+        "二号玩家比牌出局"
+      ]
+    },
+    {
+      "id": "flow-15",
+      "text": "本局已结算一号玩家获得一百分。",
+      "pieces": [
+        "本局已结算一号玩家获得一百分"
+      ]
+    },
+    {
+      "id": "flow-16",
+      "text": "底牌发牌完成。",
+      "pieces": [
+        "底牌发牌完成"
+      ]
+    },
+    {
+      "id": "flow-17",
+      "text": "一号玩家加注一百分。",
+      "pieces": [
+        "一号玩家加注一百分"
+      ]
+    },
+    {
+      "id": "flow-18",
+      "text": "二号玩家跟注九十五分。",
+      "pieces": [
+        "二号玩家跟注九十五分"
+      ]
+    },
+    {
+      "id": "flow-19",
+      "text": "请助手烧一张牌，发三张翻牌。",
+      "pieces": [
+        "请助手烧一张牌发三张翻牌"
+      ]
+    },
+    {
+      "id": "flow-20",
+      "text": "翻牌发牌完成。",
+      "pieces": [
+        "翻牌发牌完成"
+      ]
+    },
+    {
+      "id": "flow-21",
+      "text": "一号玩家过牌。",
+      "pieces": [
+        "一号玩家过牌"
+      ]
+    },
+    {
+      "id": "flow-22",
+      "text": "二号玩家下注二十分。",
+      "pieces": [
+        "二号玩家下注二十分"
+      ]
+    },
+    {
+      "id": "flow-23",
+      "text": "一号玩家跟注二十分。",
+      "pieces": [
+        "一号玩家跟注二十分"
+      ]
+    },
+    {
+      "id": "flow-24",
+      "text": "请助手烧一张牌，发一张转牌。",
+      "pieces": [
+        "请助手烧一张牌发一张转牌"
+      ]
+    },
+    {
+      "id": "flow-25",
+      "text": "转牌发牌完成。",
+      "pieces": [
+        "转牌发牌完成"
+      ]
+    },
+    {
+      "id": "flow-26",
+      "text": "二号玩家过牌。",
+      "pieces": [
+        "二号玩家过牌"
+      ]
+    },
+    {
+      "id": "flow-27",
+      "text": "请助手烧一张牌，发一张河牌。",
+      "pieces": [
+        "请助手烧一张牌发一张河牌"
+      ]
+    },
+    {
+      "id": "flow-28",
+      "text": "河牌发牌完成。",
+      "pieces": [
+        "河牌发牌完成"
+      ]
+    },
+    {
+      "id": "flow-29",
+      "text": "一号玩家下注一百分。",
+      "pieces": [
+        "一号玩家下注一百分"
+      ]
+    },
+    {
+      "id": "flow-30",
+      "text": "二号玩家弃牌。",
+      "pieces": [
+        "二号玩家弃牌"
+      ]
+    },
+    {
+      "id": "flow-31",
+      "text": "本局已结算一号玩家获得三百五十分。",
+      "pieces": [
+        "本局已结算一号玩家获得三百五十分"
+      ]
+    },
+    {
+      "id": "flow-32",
+      "text": "新的一局开始了。",
+      "pieces": [
+        "新的一局开始了"
+      ]
+    },
+    {
+      "id": "flow-33",
+      "text": "请助手发底牌。",
+      "pieces": [
+        "请助手发底牌"
+      ]
+    },
+    {
+      "id": "flow-34",
+      "text": "底牌已发好。",
+      "pieces": [
+        "底牌已发好"
+      ]
+    },
+    {
+      "id": "flow-35",
+      "text": "翻牌已发好。",
+      "pieces": [
+        "翻牌已发好"
+      ]
+    },
+    {
+      "id": "flow-36",
+      "text": "转牌已发好。",
+      "pieces": [
+        "转牌已发好"
+      ]
+    },
+    {
+      "id": "flow-37",
+      "text": "河牌已发好。",
+      "pieces": [
+        "河牌已发好"
+      ]
+    },
+    {
+      "id": "flow-38",
+      "text": "请助手烧一张牌，发转牌。",
+      "pieces": [
+        "请助手烧一张牌发转牌"
+      ]
+    },
+    {
+      "id": "flow-39",
+      "text": "请助手烧一张牌，发河牌。",
+      "pieces": [
+        "请助手烧一张牌发河牌"
+      ]
+    },
+    {
+      "id": "flow-40",
+      "text": "请选择赢家并结算。",
+      "pieces": [
+        "请选择赢家并结算"
+      ]
+    },
+    {
+      "id": "flow-41",
+      "text": "所有玩家已准备，可以开始。",
+      "pieces": [
+        "所有玩家已准备可以开始"
+      ]
+    },
+    {
+      "id": "flow-42",
+      "text": "二号玩家全下一百二十五分。",
+      "pieces": [
+        "二号玩家全下一百二十五分"
+      ]
+    },
+    {
+      "id": "flow-43",
+      "text": "一号玩家给出一分给二号玩家。",
+      "pieces": [
+        "一号玩家给出一分给二号玩家"
+      ]
+    },
+    {
+      "id": "flow-44",
+      "text": "二号玩家从一号玩家收取一百二十五分。",
+      "pieces": [
+        "二号玩家从一号玩家收取一百二十五分"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "flow-1",
+      "parts": [
+        [
+          "flow-1",
+          0
+        ]
+      ],
+      "reference": "flow-1"
+    },
+    {
+      "id": "flow-2",
+      "parts": [
+        [
+          "flow-2",
+          0
+        ]
+      ],
+      "reference": "flow-2"
+    },
+    {
+      "id": "flow-3",
+      "parts": [
+        [
+          "flow-3",
+          0
+        ]
+      ],
+      "reference": "flow-3"
+    },
+    {
+      "id": "flow-4",
+      "parts": [
+        [
+          "flow-4",
+          0
+        ]
+      ],
+      "reference": "flow-4"
+    },
+    {
+      "id": "flow-5",
+      "parts": [
+        [
+          "flow-5",
+          0
+        ]
+      ],
+      "reference": "flow-5"
+    },
+    {
+      "id": "flow-6",
+      "parts": [
+        [
+          "flow-6",
+          0
+        ]
+      ],
+      "reference": "flow-6"
+    },
+    {
+      "id": "flow-7",
+      "parts": [
+        [
+          "flow-7",
+          0
+        ]
+      ],
+      "reference": "flow-7"
+    },
+    {
+      "id": "flow-8",
+      "parts": [
+        [
+          "flow-8",
+          0
+        ]
+      ],
+      "reference": "flow-8"
+    },
+    {
+      "id": "flow-9",
+      "parts": [
+        [
+          "flow-9",
+          0
+        ]
+      ],
+      "reference": "flow-9"
+    },
+    {
+      "id": "flow-10",
+      "parts": [
+        [
+          "flow-10",
+          0
+        ]
+      ],
+      "reference": "flow-10"
+    },
+    {
+      "id": "flow-11",
+      "parts": [
+        [
+          "flow-11",
+          0
+        ]
+      ],
+      "reference": "flow-11"
+    },
+    {
+      "id": "flow-12",
+      "parts": [
+        [
+          "flow-12",
+          0
+        ]
+      ],
+      "reference": "flow-12"
+    },
+    {
+      "id": "flow-13",
+      "parts": [
+        [
+          "flow-13",
+          0
+        ]
+      ],
+      "reference": "flow-13"
+    },
+    {
+      "id": "flow-14",
+      "parts": [
+        [
+          "flow-14",
+          0
+        ]
+      ],
+      "reference": "flow-14"
+    },
+    {
+      "id": "flow-15",
+      "parts": [
+        [
+          "flow-15",
+          0
+        ]
+      ],
+      "reference": "flow-15"
+    },
+    {
+      "id": "flow-16",
+      "parts": [
+        [
+          "flow-16",
+          0
+        ]
+      ],
+      "reference": "flow-16"
+    },
+    {
+      "id": "flow-17",
+      "parts": [
+        [
+          "flow-17",
+          0
+        ]
+      ],
+      "reference": "flow-17"
+    },
+    {
+      "id": "flow-18",
+      "parts": [
+        [
+          "flow-18",
+          0
+        ]
+      ],
+      "reference": "flow-18"
+    },
+    {
+      "id": "flow-19",
+      "parts": [
+        [
+          "flow-19",
+          0
+        ]
+      ],
+      "reference": "flow-19"
+    },
+    {
+      "id": "flow-20",
+      "parts": [
+        [
+          "flow-20",
+          0
+        ]
+      ],
+      "reference": "flow-20"
+    },
+    {
+      "id": "flow-21",
+      "parts": [
+        [
+          "flow-21",
+          0
+        ]
+      ],
+      "reference": "flow-21"
+    },
+    {
+      "id": "flow-22",
+      "parts": [
+        [
+          "flow-22",
+          0
+        ]
+      ],
+      "reference": "flow-22"
+    },
+    {
+      "id": "flow-23",
+      "parts": [
+        [
+          "flow-23",
+          0
+        ]
+      ],
+      "reference": "flow-23"
+    },
+    {
+      "id": "flow-24",
+      "parts": [
+        [
+          "flow-24",
+          0
+        ]
+      ],
+      "reference": "flow-24"
+    },
+    {
+      "id": "flow-25",
+      "parts": [
+        [
+          "flow-25",
+          0
+        ]
+      ],
+      "reference": "flow-25"
+    },
+    {
+      "id": "flow-26",
+      "parts": [
+        [
+          "flow-26",
+          0
+        ]
+      ],
+      "reference": "flow-26"
+    },
+    {
+      "id": "flow-27",
+      "parts": [
+        [
+          "flow-27",
+          0
+        ]
+      ],
+      "reference": "flow-27"
+    },
+    {
+      "id": "flow-28",
+      "parts": [
+        [
+          "flow-28",
+          0
+        ]
+      ],
+      "reference": "flow-28"
+    },
+    {
+      "id": "flow-29",
+      "parts": [
+        [
+          "flow-29",
+          0
+        ]
+      ],
+      "reference": "flow-29"
+    },
+    {
+      "id": "flow-30",
+      "parts": [
+        [
+          "flow-30",
+          0
+        ]
+      ],
+      "reference": "flow-30"
+    },
+    {
+      "id": "flow-31",
+      "parts": [
+        [
+          "flow-31",
+          0
+        ]
+      ],
+      "reference": "flow-31"
+    },
+    {
+      "id": "flow-32",
+      "parts": [
+        [
+          "flow-32",
+          0
+        ]
+      ],
+      "reference": "flow-32"
+    },
+    {
+      "id": "flow-33",
+      "parts": [
+        [
+          "flow-33",
+          0
+        ]
+      ],
+      "reference": "flow-33"
+    },
+    {
+      "id": "flow-34",
+      "parts": [
+        [
+          "flow-34",
+          0
+        ]
+      ],
+      "reference": "flow-34"
+    },
+    {
+      "id": "flow-35",
+      "parts": [
+        [
+          "flow-35",
+          0
+        ]
+      ],
+      "reference": "flow-35"
+    },
+    {
+      "id": "flow-36",
+      "parts": [
+        [
+          "flow-36",
+          0
+        ]
+      ],
+      "reference": "flow-36"
+    },
+    {
+      "id": "flow-37",
+      "parts": [
+        [
+          "flow-37",
+          0
+        ]
+      ],
+      "reference": "flow-37"
+    },
+    {
+      "id": "flow-38",
+      "parts": [
+        [
+          "flow-38",
+          0
+        ]
+      ],
+      "reference": "flow-38"
+    },
+    {
+      "id": "flow-39",
+      "parts": [
+        [
+          "flow-39",
+          0
+        ]
+      ],
+      "reference": "flow-39"
+    },
+    {
+      "id": "flow-40",
+      "parts": [
+        [
+          "flow-40",
+          0
+        ]
+      ],
+      "reference": "flow-40"
+    },
+    {
+      "id": "flow-41",
+      "parts": [
+        [
+          "flow-41",
+          0
+        ]
+      ],
+      "reference": "flow-41"
+    },
+    {
+      "id": "flow-42",
+      "parts": [
+        [
+          "flow-42",
+          0
+        ]
+      ],
+      "reference": "flow-42"
+    },
+    {
+      "id": "flow-43",
+      "parts": [
+        [
+          "flow-43",
+          0
+        ]
+      ],
+      "reference": "flow-43"
+    },
+    {
+      "id": "flow-44",
+      "parts": [
+        [
+          "flow-44",
+          0
+        ]
+      ],
+      "reference": "flow-44"
+    }
+  ]
+}

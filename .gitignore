@@ -1,0 +1,67 @@
+# Runtime databases, secrets and backups
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.log
+/backups/
+/weizhuo/data/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local-only development services and compatibility entries
+/dev_bridge/
+/weizhuo-local/
+/server.py
+/scoring
+/static
+/vendor
+/test_rules.py
+# Generated caches, environments and editor files
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+/weizhuo/vendor/bin/
+# Test artifacts and private invitation codes; do not ignore shipped assets
+/.local/
+/test-artifacts/
+/weizhuo/test-artifacts/
+/weizhuo/.local/
+/screenshots/
+/playwright-report/
+/test-results/
+coverage/
+*.tmp
+*.bak
+/*.png
+/*.jpg
+/*.jpeg
+
+# Generated mobile bundles, toolchains and signing material
+weizhuo/mobile/src/weizhuomobile/runtime/
+weizhuo/mobile/build/
+weizhuo/mobile/dist/
+weizhuo/mobile/logs/
+weizhuo/mobile/.venv/
+*.keystore
+*.mobileprovision
+
+# Desktop build output
+/build/
+/dist/
+*.spec
+*.jks
+
+# Locally provisioned neural speech weights and framework
+weizhuo/mobile/.voice-assets/
+weizhuo/mobile/.voice-auditions/

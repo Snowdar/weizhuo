@@ -1,0 +1,18 @@
+import {esc} from './zhajinhua.js';
+const visuals={
+ zhajinhua:{icon:'zhajinhua-icon.webp',category:'规则计分',hint:'明暗牌 · 房主确认比牌'},
+ holdem:{icon:'holdem-icon.webp',category:'规则计分',hint:'无限注 · 盲注、边池与发牌提醒'},
+ mahjong:{icon:'mahjong-icon.webp',category:'自由记分',hint:'适合麻将、桌游、聚会小游戏等'}
+};
+export function hallHeading(title,kind){
+ const paths={identity:'M8 3h8l4 4v14H4V7zm0 0v5h8V3M8 12h8m-8 4h5',rooms:'M3 11l9-8 9 8M5 10v11h14V10M9 21v-7h6v7',games:'M5 4h14v16H5zM9 8h6m-6 4h6m-6 4h3',join:'M10 4H4v16h6m4-12 4 4-4 4M8 12h12',entry:'M3 3h6v6H3zm12 0h6v6h-6zM3 15h6v6H3zm12 0h3v3h3v3h-6z'};
+ return `<h2 class="hall-section-title"><span class="hall-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${paths[kind]||paths.games}"/></svg></span><span class="hall-section-label">${esc(title)}</span></h2>`;
+}
+export function gameCatalog(games,base){const ordered=[...games].sort((a,b)=>Number(b.id==='mahjong')-Number(a.id==='mahjong'));return `<div class="card game-catalog"><div class="panel-heading hall-section-heading">${hallHeading('选择游戏','games')}<small>${games.length} 款游戏</small></div><p class="rules hall-section-intro">选个游戏，一起围桌。</p><label class="sr-only" for="gameSearch">搜索游戏</label><input id="gameSearch" type="search" placeholder="搜索游戏名称" autocomplete="off"><div class="game-filters" role="group" aria-label="游戏类型"><button type="button" data-game-filter="all" aria-pressed="true">全部</button><button type="button" data-game-filter="规则计分" aria-pressed="false">规则计分</button><button type="button" data-game-filter="自由记分" aria-pressed="false">自由记分</button></div><div class="game-grid">${ordered.map(g=>{const v=visuals[g.id]||{category:'其他',hint:g.description};return `<div class="game-card"><button type="button" class="game-tile" data-game="${esc(g.id)}" data-category="${esc(v.category)}" data-search="${esc(g.name+' '+v.hint)}">${v.icon?`<img src="${base}assets/${v.icon}" width="72" height="72" alt="">`:''}<b>${esc(g.name)}</b><small>${esc(v.hint)}</small><span class="game-tag">${esc(v.category)} · 创建房间 →</span></button><button type="button" class="game-help" data-game-help="${esc(g.id)}" aria-label="${esc(g.name)}说明">?</button></div>`}).join('')}</div><p id="noGames" class="rules" hidden>没有匹配的游戏，试试其他名称或分类。</p></div>`}
+export function bindGameCatalog(choose,explain){let category='all';const search=document.querySelector('#gameSearch');if(!search)return;const update=()=>{let count=0;const text=search.value.trim().toLowerCase();document.querySelectorAll('[data-game]').forEach(tile=>{tile.hidden=!(category==='all'||tile.dataset.category===category)||!tile.dataset.search.toLowerCase().includes(text);tile.closest('.game-card').hidden=tile.hidden;if(!tile.hidden)count++});document.querySelector('#noGames').hidden=count>0};search.oninput=update;document.querySelectorAll('[data-game-filter]').forEach(b=>b.onclick=()=>{category=b.dataset.gameFilter;document.querySelectorAll('[data-game-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()});document.querySelectorAll('[data-game]').forEach(b=>b.onclick=()=>choose(b.dataset.game));document.querySelectorAll('[data-game-help]').forEach(b=>b.onclick=e=>{e.stopPropagation();explain(b.dataset.gameHelp)})}
+
+export function gameExplanation(id){return {
+ mahjong:{title:'自由记分是什么？',text:'不判断游戏规则或胜负。默认简约列表，也可切换牌桌。点玩家给出，或收取，由对方确认。奖金池默认关闭，启用后玩家可押分到公共奖池，仅房主可分配；也可录入全桌得失与撤回。创建房间时可设置初始积分。'},
+ zhajinhua:{title:'炸金花怎么记分？',text:'线下发牌和核对手牌，围桌按顺序记录跟注、加注、看牌、比牌和弃牌，房主确认赢家后自动结算奖池。'},
+ holdem:{title:'德州扑克怎么记分？',text:'线下发底牌和公共牌，围桌提醒发牌与行动顺序，记录无限注下注、全下及主池边池，发牌协助者核对实物牌后逐池派奖。'}
+}[id]||{title:'玩法说明',text:'按线下玩法约定，由玩家协作记分。'}}

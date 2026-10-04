@@ -1,0 +1,1030 @@
+/* 围桌 · professional tabletop game identity */
+:root{color-scheme:dark;--bg:#0c1819;--panel:#162627;--line:#344546;--muted:#a0b5b0;--text:#edf2eb;--gold:#e8bf76;--green:#97d2b1;--coral:#df8665}
+body{background:#0c1819 url('assets/party-background-pro.webp') center top / cover fixed no-repeat;color:var(--text)}
+.shell{padding:30px 28px;min-height:100vh}header{margin-bottom:36px;padding-bottom:18px;border-bottom:1px solid #536b653d}
+.brand{display:flex;align-items:center;gap:11px;color:#f2ead8;line-height:1.25}.brand-mark{width:60px;height:60px;object-fit:contain}.brand b{font-size:28px;letter-spacing:3px}.brand span{font-size:11px;letter-spacing:1px;margin-top:5px;color:var(--muted)}#connection{padding:6px 11px;background:#20403480;border:1px solid #52776370;border-radius:20px;color:#a5d6b9}
+h1{font-weight:780;letter-spacing:-1px;color:#f0eddf}.top{margin-bottom:28px}.top h1{font-size:38px;margin-bottom:10px}.top .muted{font-size:14px}.eyebrow{color:#dbba7e;font-weight:600;letter-spacing:1.5px}
+.card{background:rgba(23,39,40,.97);border:1px solid #344847;border-radius:17px;box-shadow:0 9px 28px #00000017;padding:25px}
+button{background:#253c3c;color:#e0ece3;border-color:#405755;border-radius:9px;font-weight:600;transition:background .15s,border-color .15s}@media(hover:hover) and (pointer:fine){button:hover:not(:disabled){filter:none;background:#304e4a;border-color:#69847b}}button:disabled{opacity:1;background:#233031;border-color:#374444;color:#82928d;cursor:not-allowed}
+.primary{background:#e4b975;border-color:#e4b975;color:#252b23}@media(hover:hover) and (pointer:fine){.primary:hover:not(:disabled){background:#f1cc91;border-color:#f1cc91}}.danger{color:#f0ae9d;background:#3a2d2b;border-color:#65463f}@media(hover:hover) and (pointer:fine){.danger:hover:not(:disabled){background:#513731}}.quiet{color:#a0b9ac;background:transparent;box-shadow:none;font-weight:500}@media(hover:hover) and (pointer:fine){.quiet:hover:not(:disabled){background:transparent;border-color:transparent;color:#f0d5a3}}
+input,select{background:#102021;border-color:#3d5250;color:#eef1e8;border-radius:9px;min-height:44px}input:focus,select:focus{border-color:#d1b077;box-shadow:0 0 0 3px #d1b07712}label{color:#a6b9ac;font-weight:500}.notice{background:#e0b5740e;border-color:#d1b07748;color:#e8c88e}.rules{color:#a5b7ac;line-height:1.7}
+.game-choice{position:relative;overflow:hidden;background:linear-gradient(115deg,#284740,#1b3032);border-color:#4d6c60;padding:24px 20px;gap:18px;border-radius:13px;box-shadow:none}@media(hover:hover) and (pointer:fine){.game-choice:hover:not(:disabled){background:linear-gradient(115deg,#325b4c,#243c3d)}}.game-icon{flex:0 0 94px;width:94px;height:94px;line-height:0}.game-icon img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 8px #0002)}.game-choice b{color:#f0e8d5;font-size:27px}.game-choice small{color:#a5bcae;font-size:12px}.arrow{width:30px;height:30px;display:grid;place-items:center;color:#e8c184;flex:none;font-size:22px}#chooseHoldem{background:linear-gradient(115deg,#253742,#1b2c32);border-color:#40565d}@media(hover:hover) and (pointer:fine){#chooseHoldem:hover{background:linear-gradient(115deg,#314957,#253c42)}}
+.entry{background:#1a2b2a;border-color:#3d524c}.entry h2{color:#e8e3d3}.entry img,.invite-qr img,.room-created img{background:white;padding:6px;border:1px solid #ffffff2b;box-shadow:0 5px 16px #0002;border-radius:12px}.entry .rules{color:#a6b8a9}.remembered{background:#1d3231;box-shadow:none;gap:12px}@media(hover:hover) and (pointer:fine){.remembered:hover:not(:disabled){background:#2a433e}}.remembered>span:last-child{color:#deb979}
+.room-top{padding:0 2px}.room-code{background:#d3ab6b12;color:#e3c38c;border:1px solid #bfa36e49;border-radius:7px;padding:3px 9px;letter-spacing:2px}.room-top small{color:#a3b6a9}.in-room .brand{font-size:22px}.in-room .brand-mark{width:42px;height:42px}.in-room .brand b{font-size:23px}.in-room header{padding-bottom:12px}
+.activity-card{background:#152526}.live-dot{background:#2b52392b;border-radius:20px;padding:3px 8px;color:#a2d3b0}.log{border-bottom-color:#354944}.log time{color:#8fa79a}.activity-stream .log span{color:#dce5d9}.latest-activity{background:#e4b975;color:#252b23;border-color:#e4b975;box-shadow:0 3px 12px #0003}
+.pool-card{background:linear-gradient(120deg,#1e3330,#172b2b);border-color:#466252}.pool-state{color:#d4b879;font-weight:600}.pool-value strong{color:#edc786}.pool-meta{color:#a5b8a8}.bet-column{background:#122622;border-color:#395247;border-radius:9px}.bet-column.mine{border-color:#b0a26f}.bet-player{color:#d4e3d3}.bet-entry b{color:#a7d8ad}.bet-total strong{color:#eac585}.bet-total{color:#aab9a5}.bet-empty,.ledger-hint{color:#a3b5a1}
+.readiness{border-bottom-color:#476052}.readiness-status{color:#d2dfcb}.readiness-status small{color:#a9b8a2}.ready-selected{border-color:#8ba986;background:#334f3c;color:#d1e9c9}@media(hover:hover) and (pointer:fine){.ready-selected:hover:not(:disabled){background:#415e45}}
+.play-controls{border-color:#6c5b43;background:#272e29}.play-controls .actions+.lifecycle-panel{border-top-color:#595b48}.player{background:#152a24;border-color:#3a5144}.player.turn{background:#30392b;border-color:#e2b778;box-shadow:0 0 0 1px #dfb46925}.player strong{color:#eef0df}.avatar{background:#365440;color:#dfcf91;font-weight:700}.badge{color:#bcdbb6;background:#304b35}.player.folded{opacity:.65}.table-status{background:#23392a;color:#d4c48b}.stat:first-child strong{color:#e4bd7a}
+.result{background:#b9974113;border-color:#ad934e50;color:#e8d3a1}.result h2{color:#f1d096}details summary{color:#dfc082}.manage-player{border-bottom-color:#3f5144}.management .row button{box-shadow:none}dialog{background:#1c2e2b;border-color:#4d6357;box-shadow:0 24px 90px #0006}dialog::backdrop{background:#061011bb;backdrop-filter:blur(3px)}#toast{background:#f3e4bf;color:#2d3229;box-shadow:0 8px 25px #0004}footer{color:#94a592;font-size:11px}.room-created h2{color:#ede8d7}.room-created .eyebrow{color:#dfbd7e}.invitation-link{background:#102322}
+@media(max-width:800px){body{background-size:auto 110vh}.shell{padding:20px 16px}header{margin-bottom:25px;padding-bottom:15px}.brand-mark{width:50px;height:50px}.brand b{font-size:26px}.brand span{font-size:10px;letter-spacing:0}#connection{font-size:10px;padding:6px 9px}.top h1{font-size:29px}.top .muted{font-size:12px}.card{padding:20px;border-radius:16px}.game-choice{padding:18px 15px;gap:13px}.game-icon{flex-basis:80px;width:80px;height:80px}.game-choice b{font-size:24px}.game-choice small{font-size:10px}.arrow{width:24px;height:24px}.in-room .brand-mark{width:36px;height:36px}.in-room .brand b{font-size:21px}.room-layout .card{border-radius:14px}.room-created img{width:220px}.readiness-status{flex-wrap:wrap}.remembered>span:last-child{font-size:11px}}
+@media(max-width:370px){.game-choice{gap:9px;padding:16px 11px}.game-icon{width:64px;height:64px;flex-basis:64px}.game-choice b{font-size:21px}.game-choice small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+
+#chooseMahjong{background:linear-gradient(115deg,#344437,#1f302e);border-color:#53634e}@media(hover:hover) and (pointer:fine){#chooseMahjong:hover{background:linear-gradient(115deg,#425540,#2c4038)}}.score-record{padding:13px 0;border-bottom:1px solid var(--line)}.score-record:last-child{border:0}.score-record-heading{display:flex;justify-content:space-between;gap:12px;margin-bottom:5px}.score-record-heading time{font-size:11px;color:var(--muted)}.score-record .rules{margin-top:5px;font-size:10px}.score-plus{color:#a8d8b6}.score-minus{color:#efaa94}.settlement-player{display:flex;gap:14px;align-items:center;margin-top:12px}.settlement-player label{flex:1;margin:0}.settlement-player label small{display:block;color:var(--muted)}.settlement-player input{width:120px}
+/* Adaptive room canvas, warm ivory with emerald and brass accents. */
+html,body{width:100%;min-width:0}main,.layout,section,.card,.row>*{min-width:0}img{max-width:100%}.game-choice>span:nth-child(2){min-width:0}.game-choice small{white-space:normal}input,select{min-width:0}.compact-room{grid-template-columns:minmax(0,1fr);max-width:850px;margin:auto}.room-top{max-width:850px;margin:0 auto 16px}.room-top-right{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-end;max-width:55%;gap:7px}.room-tools{display:contents}.room-tools button{font-size:12px;padding:6px 10px}.room-tools #roomRules{order:4}.room-top-right #publicScreen{order:5}.room-code{order:-1;width:100%;border:0;background:transparent}.tool-list{display:grid;gap:10px;margin-top:16px}.seat-row{display:flex;align-items:center;gap:8px;margin-top:10px}.seat-row span{flex:1;min-width:0;overflow-wrap:anywhere}.seat-row button{padding:6px 15px}.player-manage{width:100%;font-size:12px;margin-top:10px;padding:7px}.player .name b{min-width:0}.compare-row button{flex:0 0 auto}.actions .row input{flex:1;width:0}.actions .row button{flex:0 0 auto}.secondary-actions button{flex:1!important}
+body.in-room{color-scheme:light;--text:#203d36;--muted:#647c72;--line:#d2dfd6;--panel:#fffef9;--gold:#996a2c;--green:#286c50;background:radial-gradient(ellipse at top right,#dbe9de,transparent 65%),#f1f3eb;color:var(--text)}
+.in-room .card{background:#fffef9;border-color:#d2dfd6;box-shadow:0 5px 20px #27453708}.in-room h1,.in-room h2,.in-room .brand{color:#234c3d}.in-room .quiet{color:#587268}.in-room .room-top small,.in-room .rules,.in-room label,.in-room .pool-meta,.in-room .ledger-hint,.in-room .readiness-status small{color:#647c72}.in-room .pool-card{background:linear-gradient(120deg,#edf3e8,#fffdf4);border-color:#bcccaf}.in-room .pool-state,.in-room .pool-value strong,.in-room .bet-total strong{color:#926729}.in-room .bet-column{background:#fffef8;border-color:#d5dfca}.in-room .bet-column.mine{border-color:#af995f}.in-room .bet-player,.in-room .readiness-status{color:#335643}.in-room .bet-total,.in-room .bet-empty{color:#73836d}.in-room .bet-entry b{color:#326a4c}.in-room .player{background:#f2f6ee;border-color:#d5e1d0}.in-room .player.turn{background:#fff4da;border-color:#c0a064}.in-room .player strong{color:#244638}.in-room .badge{background:#ddebd8;color:#427044}.in-room .avatar{background:#dce8d5;color:#6b6335}.in-room .log{border-color:#e0e6da}.in-room .log time{color:#7d8c79}.in-room .activity-stream .log span{color:#36503d}.in-room .live-dot{background:#dfeeda;color:#357347}.in-room .notice{background:#fcf3df;color:#856129;border-color:#e4d7b7}.in-room .result h2{color:#866224}.in-room .room-code{color:#8b713f}.in-room button{background:#edf3e8;border-color:#ccd9c8;color:#335540}@media(hover:hover) and (pointer:fine){.in-room button:hover:not(:disabled){background:#dfead8;border-color:#a7b99e}}.in-room .primary{background:#deb777;border-color:#deb777;color:#3c3925}.in-room .danger{background:#fff0e8;border-color:#dfc1b1;color:#995a40}.in-room button:disabled{background:#ecefe6;border-color:#dce2d4;color:#97a390}.in-room input,.in-room select{background:#fffef9;border-color:#cbd8c6;color:#294b38}.in-room .ready-selected{background:#d7e6ca;color:#406339;border-color:#9ab783}.in-room dialog{background:#fffef9;border-color:#c7d7c5;color:#294a38}.in-room details summary{color:#866c3d}.in-room .score-plus{color:#2c7954}.in-room .score-minus{color:#aa5640}.in-room footer{color:#71836d}.in-room #connection{background:#e1ecdf;color:#3c7450;border-color:#c6dbc3}.in-room .play-controls .actions+.lifecycle-panel{border-color:#dce1cf}
+@media(max-width:600px){.shell{padding:16px 12px}.brand{gap:7px}.brand b{font-size:23px}.brand span{letter-spacing:0;font-size:9px}.brand-mark{width:42px;height:42px}#connection{flex-shrink:0;font-size:9px;padding:5px 6px}.card{padding:16px}.game-choice{gap:10px;padding:16px 10px}.game-icon{flex-basis:65px;width:65px;height:65px}.game-choice b{font-size:22px}.game-choice small{font-size:10px}.room-top{align-items:flex-start;gap:8px}.room-top>div:first-child{min-width:0;flex:1}.room-top h1{overflow-wrap:anywhere}.room-top-right{max-width:52%;gap:5px}.room-top-right button{padding:5px 8px;font-size:11px}.settings{grid-template-columns:repeat(2,minmax(0,1fr))}.pool-meta{overflow-wrap:anywhere}.players{grid-template-columns:repeat(2,minmax(0,1fr))}.room-layout .card{padding:13px}.actions input,.actions select{font-size:16px}.row>button{white-space:normal}.panel-heading{min-width:0}.invitation-link{font-size:12px}}
+.screen-tools{display:flex;justify-content:flex-end;gap:6px;flex:0 0 100%}.screen-tools #roomRules{font-size:12px;padding:6px 10px}.player.folded .player-manage{opacity:1}.in-room .quiet{background:transparent;border:0}@media(hover:hover) and (pointer:fine){.in-room .quiet:hover:not(:disabled){background:transparent;color:#264d3a}}.in-room .lifecycle-panel:empty{display:none}
+
+/* Shared warm light palette for every screen. */
+body{color-scheme:light;--text:#203d36;--muted:#647c72;--line:#d2dfd6;--panel:#fffef9;--gold:#996a2c;--green:#286c50;background:radial-gradient(ellipse at top right,#dbe9de,transparent 65%),#f1f3eb;color:var(--text)}
+body .card{background:#fffef9;border-color:#d2dfd6;box-shadow:0 5px 20px #27453708}body h1,body h2,body .brand{color:#234c3d}body .quiet{color:#587268}body .room-top small,body .rules,body label,body .pool-meta,body .ledger-hint,body .readiness-status small{color:#647c72}body .pool-card{background:linear-gradient(120deg,#edf3e8,#fffdf4);border-color:#bcccaf}body .pool-state,body .pool-value strong,body .bet-total strong{color:#926729}body .bet-column{background:#fffef8;border-color:#d5dfca}body .bet-column.mine{border-color:#af995f}body .bet-player,body .readiness-status{color:#335643}body .bet-total,body .bet-empty{color:#73836d}body .bet-entry b{color:#326a4c}body .player{background:#f2f6ee;border-color:#d5e1d0}body .player.turn{background:#fff4da;border-color:#c0a064}body .player strong{color:#244638}body .badge{background:#ddebd8;color:#427044}body .avatar{background:#dce8d5;color:#6b6335}body .log{border-color:#e0e6da}body .log time{color:#7d8c79}body .activity-stream .log span{color:#36503d}body .live-dot{background:#dfeeda;color:#357347}body .notice{background:#fcf3df;color:#856129;border-color:#e4d7b7}body .result h2{color:#866224}body .room-code{color:#8b713f}body button{background:#edf3e8;border-color:#ccd9c8;color:#335540}@media(hover:hover) and (pointer:fine){body button:hover:not(:disabled){background:#dfead8;border-color:#a7b99e}}body .primary{background:#deb777;border-color:#deb777;color:#3c3925}body .danger{background:#fff0e8;border-color:#dfc1b1;color:#995a40}body button:disabled{background:#ecefe6;border-color:#dce2d4;color:#97a390}body input,body select{background:#fffef9;border-color:#cbd8c6;color:#294b38}body .ready-selected{background:#d7e6ca;color:#406339;border-color:#9ab783}body dialog{background:#fffef9;border-color:#c7d7c5;color:#294a38}body details summary{color:#866c3d}body .score-plus{color:#2c7954}body .score-minus{color:#aa5640}body footer{color:#71836d}body #connection{background:#e1ecdf;color:#3c7450;border-color:#c6dbc3}body .play-controls .actions+.lifecycle-panel{border-color:#dce1cf}
+
+:root{color-scheme:light}body{background:radial-gradient(ellipse at top right,#dbe9de,transparent 65%),#f1f3eb}body .eyebrow{color:#97713d}body .brand{color:#234c3d}body .entry,body .remembered{background:#f4f7ee;border-color:#cfddc9}body .entry h2,body .room-created h2{color:#234c3d}body .entry .rules,body .brand span,body .game-choice small{color:#61796a}body .room-created .eyebrow,body .remembered>span:last-child{color:#8c713f}body .game-choice{background:linear-gradient(115deg,#e4eddb,#fbf5e8);border-color:#c8d9ba}@media(hover:hover) and (pointer:fine){body .game-choice:hover:not(:disabled){background:linear-gradient(115deg,#d9e6ce,#f9eed7)}}body .game-choice b{color:#2a543e}body .arrow{color:#9b713b}body #chooseHoldem{background:linear-gradient(115deg,#e3ecee,#f3f5f0);border-color:#c7d5d8}@media(hover:hover) and (pointer:fine){body #chooseHoldem:hover{background:linear-gradient(115deg,#d6e3e5,#eef3ea)}}body #chooseMahjong{background:linear-gradient(115deg,#e1ecde,#f5f4e4);border-color:#c6d7bf}@media(hover:hover) and (pointer:fine){body #chooseMahjong:hover{background:linear-gradient(115deg,#d5e4ce,#ecefdc)}}body .invitation-link{background:#fffef9}body .quiet{background:transparent;border:0}@media(hover:hover) and (pointer:fine){body .quiet:hover:not(:disabled){background:transparent;color:#264d3a}}
+/* WebView: prevent document overflow while preserving ledger scrolling. */
+html{max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:manipulation}.shell{width:100%;max-width:1150px;overflow-wrap:anywhere}header,.top,.room-top,.dialog-heading{min-width:0}header{gap:10px}.brand{min-width:0}.brand>div{min-width:0}.brand-mark{flex-shrink:0}.brand span{overflow-wrap:anywhere}.top>div{min-width:0}.layout{width:100%;max-width:100%;grid-template-columns:minmax(0,1fr) minmax(0,300px)}.layout>section,.layout>aside{max-width:100%;min-width:0}.compact-room{grid-template-columns:minmax(0,1fr);max-width:850px}.settings{grid-template-columns:repeat(2,minmax(0,1fr))}.settings>div{min-width:0}.row{max-width:100%}.row>*{min-width:0}.row>input,.row>select{flex:1 1 0;width:0}.remembered>span:first-child{min-width:0;overflow-wrap:anywhere}.remembered>span:last-child{flex-shrink:0}.game-choice>span:nth-child(2){flex:1;overflow-wrap:anywhere}.bet-ledger{max-width:100%;min-width:0;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}.bet-column{flex-shrink:0}dialog{overflow-x:hidden;overscroll-behavior-x:none}.invitation-link{max-width:100%}
+@media(max-width:800px){.layout{grid-template-columns:minmax(0,1fr)}input,select,textarea{font-size:16px}header #connection{max-width:40%;text-align:center}.brand span{letter-spacing:0}.settings label{overflow-wrap:anywhere}.screen-tools{min-width:0}.pool-value{flex-shrink:0}.panel-heading>div:first-child{min-width:0}}
+@media(max-width:360px){.brand span{font-size:9px}.game-icon{flex-basis:56px;width:56px;height:56px}.game-choice{gap:8px}.game-choice b{font-size:20px}.game-choice small{font-size:10px}.arrow{width:20px}.remembered{gap:6px;padding:10px}.room-top-right{max-width:50%}.settings{gap:0 8px}}
+/* Uniform, touch-sized room tools; stable columns follow the hand's dealer. */
+.room-top-right{gap:8px}.room-top-right .room-tools,.room-top-right .screen-tools{display:contents}.room-top-right button,.room-top-right #roomRules,.room-top-right #publicScreen{height:42px;min-width:60px;padding:8px 12px;font-size:13px;line-height:1.2;border-radius:9px;white-space:nowrap}.room-top-right .room-code{font-size:14px}.bet-column.acting{border-color:#ba924d;box-shadow:inset 0 0 0 1px #ba924d33}.bet-entries{height:112px;max-height:112px;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#b1bda2 transparent;touch-action:pan-x pan-y pinch-zoom}.bet-entries::-webkit-scrollbar{width:4px}.bet-entries::-webkit-scrollbar-thumb{background:#b1bda2;border-radius:4px}.bet-total{position:relative}.bet-entries:focus-visible{outline:2px solid #b99c60;outline-offset:-2px}.ledger-hint{line-height:1.6}
+@media(max-width:800px){.room-top{flex-direction:column;align-items:stretch;gap:10px}.room-top-right{display:grid;grid-template-columns:repeat(var(--tool-count,5),minmax(0,1fr));max-width:100%;width:100%;gap:6px;text-align:left}.room-top-right .room-code{grid-column:1/-1;width:auto;padding:0;letter-spacing:2px}.room-top-right button,.room-top-right #roomRules,.room-top-right #publicScreen{min-width:0;width:100%;height:44px;padding:8px 4px;font-size:13px}.room-top-right #roomRules{order:4}.room-top-right #publicScreen{order:5}.bet-entries{height:92px;max-height:92px}.bet-player{font-size:11px}}
+.bet-card-state{padding:4px 8px;font-size:10px;line-height:1.4;border-bottom:1px solid var(--line);color:#54734a;background:#eef4e7}.bet-card-state.seen{background:#fbf0da;color:#957135}.bet-entry b{white-space:nowrap;font-size:11px}.bet-entry{gap:4px}.bet-entry span{min-width:0}
+
+/* Focus the current speaker; identify self only by the name. */
+body .bet-column.acting{background:#fff1d3;border-color:#b68132;box-shadow:inset 0 0 0 2px #b6813255}body .bet-player.my-name{color:#815c20;font-weight:800;text-decoration:underline;text-decoration-color:#b89655;text-underline-offset:4px}
+@media(max-width:800px){.room-top-right{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+.admin-rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}.admin-rooms .card{margin:0}
+/* Keep complete names readable within cards by horizontal scrolling. */
+.bet-player,.player .name b,.remembered>span:first-child,.admin-rooms .panel-heading h2,.room-created h2,.room-top h1{min-width:0;max-width:100%;white-space:nowrap;overflow-x:auto;overflow-y:hidden;text-overflow:clip;scrollbar-width:thin;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.player .name b,.admin-rooms .panel-heading h2,.remembered>span:first-child{flex:1}.player .badge,.remembered>span:last-child{flex-shrink:0}.room-top>div:first-child{min-width:0}
+
+/* Expandable game library and dealer-led Hold'em table. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.game-catalog #gameSearch{margin:18px 0 12px}.game-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.game-filters button{font-size:12px;padding:8px 12px}.game-filters [aria-pressed=true]{background:#d9e7d5;border-color:#a8bea0;color:#27553d}.game-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px}.game-tile{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:18px;gap:10px;background:linear-gradient(145deg,#eef4e8,#fff8eb)}.game-tile[hidden]{display:none}.game-tile img{object-fit:contain;align-self:center}.game-tile b{font-size:20px;color:#2c5541}.game-tile small{font-size:12px;color:#647969;line-height:1.6}.game-tag{font-size:10px;color:#87672f; margin-top:auto}.holdem-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;padding:0;list-style:none;margin:18px 0}.holdem-steps li{text-align:center;padding:8px 2px;border-radius:8px;background:#edf1e7;color:#788879;font-size:12px}.holdem-steps .current{background:#e4c896;color:#594524;font-weight:700}.dealer-prompt{font-size:18px;line-height:1.7;color:#33553f;margin:14px 0}.holdem-positions{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:#647969;margin-bottom:18px}.holdem-positions span{background:#f1f4ec;padding:5px 9px;border-radius:7px}.holdem-pots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px;margin-top:16px}.holdem-pot{border:1px solid #d6dfcb;padding:10px;border-radius:10px}.holdem-pot b,.holdem-pot small{display:block;overflow-wrap:anywhere}.holdem-pot b{font-size:13px;color:#80612f}.holdem-pot small{font-size:11px;color:#627968;margin-top:6px}.holdem-actions .row{margin-top:14px}.pot-winners{border:1px solid #cbdac2;border-radius:12px;margin:14px 0;padding:14px}.pot-winners legend{color:#80612f;font-weight:700}.pot-winners label{display:flex;gap:10px;align-items:center;padding:10px;background:#f0f5eb;border-radius:8px}.pot-winners input{width:20px;height:20px;flex:0 0 20px}
+@media(max-width:600px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.game-tile{padding:13px 10px;gap:8px}.game-tile img{width:60px;height:60px}.game-tile b{font-size:18px}.game-tile small{font-size:11px}.game-tag{font-size:9px}.dealer-prompt{font-size:16px}.holdem-steps li{font-size:10px;padding:9px 1px}.holdem-positions{gap:5px}.dealer-assistant .panel-heading{flex-wrap:wrap;gap:8px}}
+
+/* Personal identity, unambiguous room returns, separate administration. */
+.hall-tools{display:flex;align-items:center;justify-content:space-between;gap:16px}.hall-tool-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}.hall-tool-actions button,.admin-entry{min-height:44px;display:inline-flex;align-items:center;justify-content:center}.admin-entry{color:#58725f;text-decoration:none;font-size:13px;padding:8px 12px;border:1px solid #cfddc7;border-radius:9px;white-space:nowrap}.home-button{display:inline-flex;gap:7px;align-items:center;min-height:44px}.home-button span{font-size:27px;line-height:1}.my-rooms .remembered{align-items:center}.my-rooms .remembered b{display:block}.my-rooms .remembered small{font-size:11px;white-space:normal}.holdem-pot small{white-space:normal}
+@media(max-width:600px){.hall-tools{flex-direction:column;align-items:stretch;gap:12px}.hall-tool-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.hall-tool-actions button,.admin-entry{width:100%;font-size:13px}.my-rooms .remembered>span:last-child{font-size:11px}}
+
+.game-card{position:relative;min-width:0}.game-card[hidden]{display:none}.game-card .game-tile{width:100%;height:100%;padding-top:24px}.game-help{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;padding:0;font-weight:700;z-index:1}.game-help:focus-visible{outline:2px solid #95692e;outline-offset:3px}.game-card .game-tile b{padding-right:24px}
+.home-link,.home-link:visited{color:#58725f;text-decoration:none;font-size:12px}@media(hover:hover) and (pointer:fine){.home-link:hover{color:#2e563c}}.home-link:focus-visible{outline:2px solid #9c854d;outline-offset:3px;border-radius:6px}.join .home-link{margin-top:14px}
+
+.invite-qr > input + button{margin-top:12px}
+
+/* Shared room header: toolbar, title, then a single metadata row. */
+.room-top.compact-header{display:block;max-width:850px;margin:0 auto 16px}.room-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.room-toolbar .header-actions{display:flex;flex-direction:row;align-items:center;gap:8px;min-width:0;max-width:none}.room-toolbar .home-button{display:inline-flex;align-items:center;gap:7px;height:40px;min-height:40px;margin:0;padding:0;flex-shrink:0;font-size:14px;line-height:1;color:#58725f}.room-toolbar .home-button svg,.header-icon svg{width:20px;height:20px;display:block;flex-shrink:0}.room-toolbar .home-button span{font:inherit;line-height:1}.header-icon-row{display:flex;align-items:center;gap:8px}.header-icon-row .header-icon{display:grid;place-items:center;width:40px;height:40px;min-height:40px;padding:9px;border-radius:10px;background:#eef4e8;border-color:#cbdcc5;color:#497354}.header-icon-row .header-leave{background:#fbefea;border-color:#e4c8bd;color:#ad5946}.profile-menu{position:relative;min-width:0;z-index:3}.room-toolbar .profile-menu summary{display:flex;align-items:center;gap:6px;list-style:none;cursor:pointer;color:#335942;background:#edf4e8;border:1px solid #cddbc4;border-radius:10px;height:40px;min-height:40px;padding:0 10px;font-size:14px;line-height:1;font-weight:600}.profile-menu summary::-webkit-details-marker{display:none}.profile-name{white-space:nowrap;overflow-x:auto;scrollbar-width:none;min-width:0;max-width:88px}.room-toolbar .profile-role{font-size:12px;line-height:1;color:#73826b;white-space:nowrap;padding:0;flex-shrink:0}.profile-chevron{display:flex;align-items:center;flex-shrink:0}.profile-chevron svg{display:block;width:16px;height:16px}.profile-options{position:absolute;right:0;top:calc(100% + 7px);display:grid;gap:5px;padding:7px;width:174px;background:#fffef8;border:1px solid #d3dfc9;border-radius:12px;box-shadow:0 8px 24px #294a3826}.profile-options button{padding:11px 10px;text-align:left;white-space:nowrap;font-size:12px;border:0;background:transparent}@media(hover:hover) and (pointer:fine){.profile-options button:hover{background:#edf4e7}}.profile-menu summary:focus-visible,.header-icon:focus-visible,.header-rule:focus-visible{outline:2px solid #9c854d;outline-offset:3px}.compact-header .room-heading{min-width:0}.compact-header h1{font-size:24px;line-height:1.4;margin:0 0 5px}.room-meta-line{display:flex;align-items:center;gap:8px;white-space:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:thin;font-size:12px;line-height:24px;color:#73826b}.room-meta-line>*{flex-shrink:0}.compact-header .room-code{display:inline;width:auto;padding:0;margin:0;order:initial;letter-spacing:0;font:inherit;color:inherit}.room-meta-line .meta-divider{color:#b0beaa;font-size:12px}.room-meta-line .room-game-line{display:inline-flex;align-items:center;gap:5px;flex-wrap:nowrap;margin:0;font:inherit;color:inherit}.room-meta-line .header-rule{width:22px;height:22px;min-height:22px;padding:0;border-radius:50%;font-size:12px;line-height:1;background:#eff5e9;color:#6a7e63;flex-shrink:0}
+@media(max-width:800px){.room-top.compact-header{margin-bottom:14px}.room-toolbar{margin-bottom:10px}.compact-header h1{font-size:20px}}
+@media(max-width:360px){.room-toolbar{gap:6px}.room-toolbar .header-actions,.header-icon-row{gap:5px}.profile-name{max-width:60px}.room-toolbar .profile-menu summary{padding:0 8px}.room-meta-line{gap:6px;font-size:11px}.compact-header h1{font-size:18px}}
+
+.give-player-picker{position:relative}.player-picker-trigger{width:100%;min-height:46px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;text-align:left;font-size:16px;font-weight:400;color:#7e8b79;background:#fffef9;border:1px solid #cadbc2;border-radius:9px}.player-picker-trigger.has-selection{color:#345641}.player-picker-trigger svg{width:18px;height:18px;flex-shrink:0;transition:transform .15s}.player-picker-trigger[aria-expanded=true] svg{transform:rotate(180deg)}.player-picker-trigger[aria-expanded=true]{border-color:#a5bb95}.player-picker-trigger:disabled{opacity:1;color:#859080;background:#f0f3ec;cursor:default}.player-picker-trigger:disabled svg{opacity:.4}.player-picker-list{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:5;padding:6px;background:#fffef9;border:1px solid #d0ddc7;border-radius:12px;box-shadow:0 8px 24px #294a3826;max-height:240px;overflow-y:auto;scrollbar-width:thin}.player-picker-list[hidden]{display:none}.player-picker-list [role=option]{width:100%;display:flex;align-items:center;gap:10px;min-height:46px;padding:10px;border:0;border-radius:8px;background:transparent;color:#345641;font-size:14px;text-align:left}.player-picker-list [role=option]+[role=option]{margin-top:4px}.picker-player-name{flex:1;min-width:0;overflow-wrap:anywhere}.player-picker-list small{font-size:11px;font-weight:400;color:#7b8a70;white-space:nowrap}.picker-check{width:14px;color:#597c4c;visibility:hidden}.player-picker-list [aria-selected=true]{background:#e9f1e2}.player-picker-list [aria-selected=true] .picker-check{visibility:visible}.player-picker-list [role=option]:focus-visible{background:#eff4e8;outline:0}@media(hover:hover) and (pointer:fine){.player-picker-list [role=option]:hover{background:#eff4e8;outline:0}}.player-picker-trigger:focus-visible{outline:2px solid #adba99;outline-offset:2px}
+
+/* Consistent separation for stacked controls, including dialog-only actions. */
+.tool-list{display:grid;gap:12px}.row{gap:10px}.wide+button.wide,.wide+form,.invite-qr>button+button,.seat-row+.seat-row{margin-top:12px}form>input+button,form>select+button,form>label+button,form>.notice+button{margin-top:12px}.seat-row{display:flex;align-items:center;gap:8px}.seat-row>span{flex:1;min-width:0}.nickname-edit{align-items:stretch;margin-top:8px}.nickname-edit button{flex:0 0 auto;white-space:nowrap}.nickname-edit input{min-width:0}.pot-winners label+label{margin-top:8px}
+/* Hold'em: fixed table, merged seats and scores, independent player/helper dock. */
+body.holdem-table{height:100dvh;overflow:hidden}.holdem-table .shell{height:100dvh;min-height:0;padding:12px 16px;max-width:900px;display:flex;flex-direction:column;overflow:hidden}.holdem-table .shell>header,.holdem-table .shell>footer{display:none}.holdem-table #app{display:flex;flex-direction:column;flex:1;min-height:0}.holdem-table .room-top.compact-header{width:100%;flex-shrink:0;margin-bottom:8px}.holdem-table .room-toolbar{margin-bottom:4px}.holdem-table .compact-header h1{font-size:19px;line-height:1.3;margin-bottom:2px}.holdem-table-layout{display:flex;flex-direction:column;flex:1;min-height:0;gap:8px}.table-stage{position:relative;flex:1;min-height:0;display:flex;flex-direction:column}.table-stage .holdem-steps{flex-shrink:0;margin:0 0 4px;gap:4px}.table-stage .holdem-steps li{padding:5px 2px;font-size:10px}.poker-surface{position:relative;flex:1;min-height:0;width:100%;max-width:530px;align-self:center;background:url('assets/holdem-table-v1.webp') center / 100% 100% no-repeat;border-radius:32px;isolation:isolate}.table-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:5px;width:45%;color:#fff7de;text-align:center}.table-center>small{font-size:11px;line-height:1.5;color:#d4e3ce}.table-center>strong{font-size:30px;color:#f3ce8b;line-height:1.1}.table-center strong span{font-size:12px;font-weight:400}.table-phase{font-size:12px;padding:5px 12px;background:#fff8dc16;border:1px solid #f2d69b44;border-radius:20px}.table-seat{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:2px;width:100px;padding:6px 5px;min-height:68px;border:1px solid #c5d6bd;border-radius:12px;background:#fffef6!important;box-shadow:0 3px 10px #102e2440;z-index:1;color:#345341}@media(hover:hover) and (pointer:fine){.table-seat:hover:not(:disabled){border-color:#bfa164;background:#fff7e3!important}}.table-seat.acting{background:#ffebbd!important;border-color:#bd873c;box-shadow:0 0 0 2px #edc37c99,0 3px 10px #102e2440}.table-seat.folded{opacity:.7}.table-seat .seat-name{font-size:12px;font-weight:700;max-width:100%;white-space:nowrap;overflow-x:auto;scrollbar-width:none}.table-seat .my-name{color:#8d672a;text-decoration:underline;text-underline-offset:3px}.table-seat strong{font-size:18px;line-height:1.1;color:#294d39}.table-seat strong small{font-size:10px;font-weight:400}.seat-status,.seat-bet{font-size:9px;line-height:1.25;color:#6d8067;white-space:nowrap}.table-detail-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;flex-shrink:0}.table-detail-tools button{padding:7px 3px;min-height:36px;font-size:12px}.table-dock{border:1px solid #cddcc8;background:#fffef9;border-radius:15px;padding:10px;flex-shrink:0;box-shadow:0 -4px 18px #294a3808}.dock-tabs{display:flex;align-items:center;gap:8px;margin-bottom:8px}.dock-tabs button{padding:7px 14px;font-size:12px;min-height:34px}.dock-tabs [aria-pressed=true]{background:#dce9d4;color:#315c3d;border-color:#abc49f}.dock-tabs>span{font-size:11px;color:#70816c;margin-left:auto}.dock-pane[hidden]{display:none}.dock-pane{max-height:240px;overflow-y:auto;overscroll-behavior:contain}.dock-wait p{font-size:12px;margin:0 0 8px;color:#6c7f65}.table-dock .holdem-actions.card{border:0;border-radius:0;box-shadow:none;padding:0;margin:0;background:transparent}.table-dock h2{font-size:13px;margin:0 0 7px}.table-dock .row{margin:0;gap:8px}.table-dock button{font-size:13px;min-height:40px;padding:9px 10px}.table-dock .rules{font-size:10px;margin:5px 0;line-height:1.4}.table-dock .notice{font-size:12px;padding:10px;margin:0}.table-dock #holdemRaise{margin:8px 0}.table-dock #holdemRaise label{font-size:10px;margin:0 0 5px;display:block}.table-dock #holdemRaise .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.table-dock #holdemRaise input{width:100%;min-height:40px;height:40px;padding:8px 10px;font-size:16px}.table-dock #holdemRaise .rules{display:none}.helper-prompt{font-size:12px;line-height:1.5;margin:0 0 8px}.helper-secondary{margin-top:8px!important}.seat-bet-details{max-height:35dvh;overflow-y:auto}.table-dock .wide+button.wide{margin-top:8px}.holdem-table dialog{max-height:85dvh}.holdem-table #toast{z-index:20}
+@media(max-width:600px){.holdem-table .shell{padding:8px 8px max(8px,env(safe-area-inset-bottom))}.holdem-table .compact-header h1{font-size:17px}.table-seat{width:84px;min-height:58px;padding:5px 3px;border-radius:10px}.table-seat .seat-name{font-size:11px}.table-seat strong{font-size:16px}.seat-status,.seat-bet{font-size:8px}.table-center>strong{font-size:26px}.table-center>small{font-size:10px}.table-dock{padding:8px}.dock-pane{max-height:205px}.table-dock .holdem-actions h2{display:none}.table-dock .holdem-actions>button.wide{margin-top:0;min-height:36px;padding:7px}.holdem-table-layout{gap:6px}}
+@media(max-height:700px) and (orientation:portrait){.holdem-table .room-toolbar{margin-bottom:0}.holdem-table .compact-header h1{font-size:15px}.holdem-table .room-meta-line{font-size:10px;line-height:20px}.table-seat{min-height:48px;gap:1px}.seat-bet{display:none}.table-center>small:last-child{display:none}.table-stage .holdem-steps li{padding:3px}.dock-tabs{margin-bottom:5px}.table-dock button{min-height:36px;padding:7px 8px}.table-dock #holdemRaise{margin:5px 0}.dock-pane{max-height:185px}}
+@media(orientation:landscape) and (max-height:600px){.holdem-table-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;grid-template-rows:minmax(0,1fr) 36px}.table-stage{grid-row:1/3}.table-dock{grid-column:2;grid-row:1;min-height:0;overflow-y:auto}.table-detail-tools{grid-column:2;grid-row:2}.dock-pane{max-height:none}.table-seat{width:78px;min-height:46px}.seat-bet{display:none}.table-center>small:last-child{display:none}}
+.table-seat{line-height:1.2}.table-seat .seat-name{line-height:1.2}.table-seat strong{white-space:nowrap;font-variant-numeric:tabular-nums}.table-seat .seat-status,.table-seat .seat-bet{line-height:1.2}
+@media(max-width:600px){.table-seat{width:clamp(64px,21vw,84px);gap:1px;padding:4px 3px}.table-seat strong{font-size:clamp(12px,4vw,16px)}}
+@media(max-height:700px) and (orientation:portrait){.table-seat .seat-name{font-size:10px;line-height:12px}.table-seat strong{font-size:14px;line-height:14px}.table-seat .seat-status{font-size:8px;line-height:10px}.table-seat{height:48px;min-height:48px}}
+/* Keep the board stable as actions and helper stages change. */
+.table-dock{display:flex;flex-direction:column;height:230px}.dock-tabs{flex-shrink:0}.dock-pane{flex:1;min-height:0;max-height:none}.dock-pane[hidden]{display:none}
+@media(max-height:700px) and (orientation:portrait){.table-dock{height:205px}.poker-surface[data-density=dense] .table-seat{height:32px;min-height:32px;padding:2px 3px;gap:1px;border-radius:7px}.poker-surface[data-density=dense] .table-seat .seat-name{font-size:9px;line-height:10px}.poker-surface[data-density=dense] .table-seat strong{font-size:12px;line-height:13px}.poker-surface[data-density=dense] .table-seat .seat-status{display:none}}
+@media(orientation:landscape) and (max-height:600px){.table-dock{height:auto}.dock-pane{flex:0 0 auto}.table-seat .seat-name{line-height:12px}.table-seat .seat-status{line-height:10px}}
+@media(orientation:landscape) and (max-height:600px){.poker-surface[data-density=dense] .table-seat{height:40px;min-height:40px;padding:3px;gap:1px}.poker-surface[data-density=dense] .table-seat .seat-status{display:none}.poker-surface[data-density=dense] .table-seat .seat-name{font-size:10px;line-height:12px}.poker-surface[data-density=dense] .table-seat strong{font-size:16px;line-height:16px}}
+.table-live-activity .activity-card{border:0;box-shadow:none;padding:0;margin:0;background:transparent}.table-live-activity .panel-heading{display:none}.table-live-activity .activity-stream{height:45dvh;max-height:45dvh}
+/* Full-height table; corners hold tools, actions open only when needed. */
+.holdem-table-layout{position:relative;display:flex;gap:0}.table-stage{flex:1;width:100%;height:100%;grid-row:auto}.poker-surface{max-width:none;border-radius:24px}.table-detail-tools{position:absolute;top:36px;right:5px;display:flex;flex-direction:column;gap:8px;z-index:2;width:auto}.table-detail-tools button{min-height:34px;width:70px;font-size:11px;padding:7px 3px;background:#fffef6dd;border-color:#c5d6bd;box-shadow:0 2px 8px #102e241a}.table-corner-actions{position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:0 4px;z-index:2;pointer-events:none}.table-corner-actions button{pointer-events:auto;min-height:42px;font-size:12px;padding:10px 12px;box-shadow:0 2px 8px #102e2422}.table-corner-actions [aria-pressed=true]{border-color:#b79250;background:#f6e1b8}.table-action-sheet{position:fixed;inset:0;z-index:8;display:flex;align-items:flex-end;justify-content:center;padding:16px 12px max(16px,env(safe-area-inset-bottom))}.table-action-sheet[hidden]{display:none}.table-action-backdrop{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;background:#102e2455!important;backdrop-filter:blur(2px);cursor:default}.table-action-sheet .table-dock{position:relative;width:min(100%,430px);height:auto;max-height:75dvh;flex:0 1 auto;padding:14px;border-radius:20px;box-shadow:0 10px 40px #142d3440;overflow-y:auto}.table-action-sheet .dock-pane{flex:0 0 auto;overflow-y:visible}.table-action-sheet .dock-tabs{justify-content:space-between;margin-bottom:12px}.table-action-sheet .dock-tabs h2{font-size:16px;margin:0}.table-action-sheet #closeTableActions{width:36px;min-height:36px;padding:6px}.table-action-sheet .holdem-actions h2{display:none}.table-action-sheet #holdemRaise .rules{display:block;margin-top:8px}.table-action-sheet .table-dock .row{gap:10px}.table-action-sheet .table-dock button{min-height:44px}.table-action-sheet .table-dock #holdemRaise{margin:12px 0}.table-action-sheet .helper-secondary{margin-top:12px!important}
+@media(max-width:600px){.table-detail-tools{top:33px;right:2px}.table-detail-tools button{width:60px;min-height:32px;font-size:10px}.table-corner-actions button{font-size:11px;min-height:40px;padding:8px}.table-action-sheet .table-dock{padding:12px}}
+@media(orientation:landscape) and (max-height:600px){.holdem-table-layout{display:flex}.table-detail-tools{top:30px;right:3px}.table-action-sheet{align-items:center}.table-action-sheet .table-dock{max-height:90dvh}}
+.table-detail-menu{position:absolute;right:5px;top:33px;z-index:3}.table-detail-menu .table-menu-toggle{display:grid;place-items:center;width:34px;height:34px;border:1px solid #c5d6bd;border-radius:10px;background:#fffef6dd;cursor:pointer;font-size:23px;line-height:1;list-style:none;color:#335540}.table-detail-menu .table-menu-toggle::-webkit-details-marker{display:none}.table-detail-menu .table-detail-tools{position:absolute;top:42px;right:0;width:115px;background:#fffef9;border:1px solid #cddac6;border-radius:12px;padding:7px;box-shadow:0 8px 24px #294a3833}.table-detail-menu .table-detail-tools button{width:100%;min-height:38px;font-size:12px;box-shadow:none;border:0;background:#edf3e8}.table-detail-menu .table-detail-tools[hidden]{display:none!important}
+@media(orientation:portrait) and (max-height:700px){.holdem-table-layout .poker-surface[data-density] .table-seat{height:auto;min-height:60px;padding:4px 3px;gap:1px}.holdem-table-layout .poker-surface[data-density] .table-seat .seat-name{font-size:11px;line-height:13px}.holdem-table-layout .poker-surface[data-density] .table-seat strong{font-size:14px;line-height:16px}.holdem-table-layout .poker-surface[data-density] .table-seat .seat-status,.holdem-table-layout .poker-surface[data-density] .table-seat .seat-bet{display:block;font-size:8px;line-height:10px}}
+.table-immersive-toggle{position:absolute;left:5px;top:33px;z-index:3;display:grid;place-items:center;width:34px;height:34px;padding:6px;border-radius:10px;background:#fffef6dd;border-color:#c5d6bd}.table-immersive-toggle svg{width:20px;height:20px}.table-immersive-toggle[aria-pressed=true]{background:#f6e1b8;border-color:#b79250}.table-room-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}.table-room-tools button{min-height:44px;font-size:13px}.table-room-information h3{overflow-wrap:anywhere}.holdem-table.table-immersive .room-top.compact-header{display:none}.holdem-table.table-immersive .table-stage .holdem-steps{display:none}.holdem-table.table-immersive .shell{padding:0}.holdem-table.table-immersive .poker-surface{border-radius:0}.holdem-table.table-immersive .table-detail-menu{top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right))}.holdem-table.table-immersive .table-immersive-toggle{top:max(10px,env(safe-area-inset-top));left:max(10px,env(safe-area-inset-left))}.holdem-table.table-immersive .table-corner-actions{bottom:max(10px,env(safe-area-inset-bottom));padding:0 10px}.holdem-table.table-immersive .table-center .table-phase{font-size:14px}.holdem-table.table-immersive .table-center>small:last-child{display:block}
+@media(orientation:landscape){.poker-surface{background-image:url('assets/holdem-table-landscape-v1.webp')}.holdem-table .compact-header h1{font-size:16px}.holdem-table .room-top.compact-header{margin-bottom:5px}.holdem-table .room-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.holdem-table .room-heading h1{max-width:48%;margin:0}.holdem-table .room-meta-line{font-size:11px;gap:6px}.holdem-table.table-immersive .table-center>strong{font-size:30px}}
+/* Viewport contract: the document never scrolls while a game table is open.
+   visualViewport supplies the keyboard/address-bar visible area; only panels scroll. */
+html.table-viewport,html.table-viewport body{width:100%;height:100%;min-height:0;overflow:hidden!important;overscroll-behavior:none;overflow-anchor:none}
+html.table-viewport body{position:fixed;inset:auto;top:var(--table-viewport-top,0px);left:var(--table-viewport-left,0px);width:var(--table-viewport-width,100vw);height:var(--table-viewport-height,100dvh);max-width:none}
+.table-viewport .shell{height:100%!important;width:100%;max-width:none;min-height:0;overflow:hidden}
+.table-viewport #app,.table-viewport .holdem-table-layout,.table-viewport .table-stage{min-width:0;min-height:0;overflow:clip}
+.table-viewport #app{overflow:visible}.table-viewport .holdem-table-layout{overflow:visible}.table-viewport .table-stage{overflow:hidden}
+.table-viewport .table-action-sheet{inset:auto;top:var(--table-viewport-top,0px);left:var(--table-viewport-left,0px);width:var(--table-viewport-width,100vw);height:var(--table-viewport-height,100dvh);overflow:hidden;overscroll-behavior:none}
+.table-viewport .table-action-sheet .table-dock{max-height:calc(var(--table-viewport-height,100dvh) - 32px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.table-viewport dialog{max-height:calc(var(--table-viewport-height,100dvh) - 32px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.table-viewport dialog{position:fixed;margin:0;left:calc(var(--table-viewport-left,0px) + var(--table-viewport-width,100vw)/2);top:calc(var(--table-viewport-top,0px) + var(--table-viewport-height,100dvh)/2);transform:translate(-50%,-50%);max-width:calc(var(--table-viewport-width,100vw) - 24px)}
+.pot-chips{display:block;width:80px;height:62px;object-fit:contain;filter:drop-shadow(0 3px 4px #0e281f55);pointer-events:none}.pot-chips.empty{opacity:.5}.table-chip-effects{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:5}.chip-flight{position:absolute;width:50px;height:50px;pointer-events:none;will-change:transform,opacity}.chip-flight img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px #0e281f55)}.chip-flight span{position:absolute;top:-10px;left:0;right:0;text-align:center;font-size:12px;font-weight:800;color:#ffe0a3;text-shadow:0 1px 3px #123025}.table-viewport .table-chip-effects{top:var(--table-viewport-top,0px);left:var(--table-viewport-left,0px);width:var(--table-viewport-width,100vw);height:var(--table-viewport-height,100dvh)}
+@media(orientation:landscape) and (max-height:600px){.pot-chips{width:65px;height:45px}}
+@media(prefers-reduced-motion:reduce){.chip-flight{display:none}}
+
+/* Seat-bound actions and tactile player plaques. */
+.table-seat{background:linear-gradient(145deg,#254b3e,#17362d)!important;color:#f7edd0;border:1px solid #bb975e;border-radius:15px;box-shadow:0 3px 0 #10281f,0 6px 16px #071b2855;padding-top:10px!important;overflow:visible}@media(hover:hover) and (pointer:fine){.table-seat:hover:not(:disabled){background:#305b48!important}}.table-seat.acting{background:linear-gradient(145deg,#71572d,#3d3522)!important;border-color:#f0ce80;box-shadow:0 0 0 2px #e7c27666,0 6px 15px #102e2440}.table-seat .seat-name{color:#f4e8c9}.table-seat .my-name{color:#f1ca79}.table-seat strong{color:#ffedb4}.table-seat .seat-status,.table-seat .seat-bet{color:#baccb6}.seat-emblem{position:absolute;top:-9px;left:7px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#eed29a;color:#344436;border:2px solid #866b3c;font-size:10px;font-weight:800}.deal-marker{position:absolute;top:-21px;right:-5px;background:#d7e9f3;color:#244b64;padding:4px 6px;border-radius:7px;font-size:9px;white-space:nowrap}.table-seat.first-recipient{border-color:#acd6ee;box-shadow:0 0 0 2px #8abacb66,0 4px 14px #102e2440}.seat-action-focus{position:absolute;z-index:4;left:50%;bottom:calc(11% + 42px);transform:translateX(-50%);width:min(340px,calc(100% - 24px));max-height:calc(80% - 50px);overflow-y:auto;overscroll-behavior:contain;display:grid;gap:8px;filter:drop-shadow(0 8px 12px #102e2444)}.seat-action-focus[hidden]{display:none}.seat-action-player,.seat-action-helper{border-radius:16px;padding:10px;background:#fff7e7;border:1px solid #c9a76b}.seat-action-helper{background:#e5f1f4;border-color:#7daebc;color:#275460}.seat-action-helper .primary{background:#407883;color:white}.action-role{font-size:10px;font-weight:700;letter-spacing:1px}.seat-action-focus .card{margin:0;padding:0;border:0;box-shadow:none;background:none}.seat-action-focus h2,.seat-action-focus .rules{display:none}.seat-action-focus .row{gap:8px}.seat-action-focus button{min-height:36px;padding:7px 10px;font-size:12px}.seat-action-focus #holdemRaise{margin:8px 0}.seat-action-focus #holdemRaise label{font-size:10px;display:block;margin-bottom:4px}.seat-action-focus input{height:36px;min-height:36px;font-size:16px;padding:6px 8px}.seat-action-focus .dock-wait p,.seat-action-focus .helper-prompt{font-size:11px;margin:0 0 7px}.seat-edit-tools{display:flex;gap:8px;pointer-events:auto}.seat-edit-tools #editTableSeats{font-size:23px;width:42px;padding:2px}.editing-seats .seat-action-focus{display:none}.editing-seats .table-seat{touch-action:none;cursor:grab;border-style:dashed}.seat-dragging{z-index:7;opacity:.85}.seat-picked{outline:3px solid #f6cf7e}.editing-seats .table-center:after{content:'拖动到另一座位交换 · 或依次点选两人';font-size:11px;line-height:1.5;color:#ffedb4}.holdem-table .table-center{width:46%}.holdem-table .table-center>small:last-child{display:block}
+@media(orientation:landscape){.seat-action-focus{width:min(400px,48%);bottom:calc(11% + 32px);max-height:calc(80% - 30px)}.seat-action-focus .holdem-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.seat-action-focus #holdemRaise{margin:0;grid-row:span 2}.seat-action-focus .holdem-actions h2{display:none}.seat-action-focus .holdem-actions>button.wide{margin:0}.seat-action-focus .helper-prompt{max-height:40px;overflow-y:auto}.seat-action-focus .dock-wait{display:flex;align-items:center;gap:8px}.seat-action-focus .dock-wait p{margin:0}.seat-action-focus .dock-wait button{flex:1}.seat-emblem{width:17px;height:17px;font-size:9px}.deal-marker{font-size:8px}}
+
+@media(orientation:portrait){.seat-action-focus{width:clamp(180px,calc(100% - 180px),300px)}.seat-action-focus .dock-wait p{font-size:10px}.seat-action-focus #holdemRaise .row{display:grid;grid-template-columns:minmax(0,1fr) 64px}.seat-action-focus #holdemRaise input{width:100%}}
+
+.holdem-table .seat-action-helper button.primary{background:#efa344!important;color:#3e260c!important;border-color:#c47723;font-weight:700;box-shadow:0 2px 0 #9d5d20,inset 0 1px 0 #ffd697}.holdem-table .seat-action-player button.primary{background:#ddba79!important;color:#3c3624!important}
+
+/* Keep the pot value at the geometric table center, with short supporting labels. */
+.holdem-table .table-center{top:50%;left:50%;width:46%;height:34px;justify-content:center;gap:0;transform:translate(-50%,-50%)}.table-center>.pot-chips{position:absolute;bottom:calc(100% + 20px);width:65px;height:48px}.table-center>small:first-of-type{position:absolute;bottom:calc(100% + 4px);white-space:nowrap}.table-center>.table-phase{position:absolute;top:calc(100% + 6px);white-space:nowrap;padding:4px 9px}.table-center>small:last-child{position:absolute;top:calc(100% + 39px);width:150%;font-size:10px;line-height:1.4}.seat-action-focus .action-role{font-size:9px;display:block;margin-bottom:4px}.seat-action-focus .dock-wait p{display:none}.seat-action-focus .helper-prompt{display:none}.seat-action-focus #holdemRaise label{font-size:9px;margin-bottom:3px}.seat-action-focus #holdemRaise{margin:6px 0}.seat-action-focus button{font-size:11px;padding:6px 8px}.editing-seats .table-center:after{position:absolute;top:calc(100% + 72px);width:150%;font-size:10px}.holdem-table .seat-action-focus button:disabled{background:#d5d9cc!important;color:#7c8773!important;border-color:#c3cbbc}
+@media(orientation:portrait){.seat-action-focus{width:clamp(160px,calc(100% - 190px),280px)}.seat-action-focus .row{gap:6px}.seat-action-focus #holdemRaise .row{grid-template-columns:minmax(0,1fr) 55px}.seat-action-focus #holdemRaise input{font-size:15px}.holdem-table .poker-surface[data-density=dense] .table-seat{width:clamp(60px,19vw,84px)}}
+@media(orientation:landscape){.seat-action-focus{bottom:calc(11% + 24px);width:min(440px,54%)}.seat-action-focus .holdem-actions{grid-template-columns:1.15fr 1.1fr .65fr;gap:6px;align-items:center}.seat-action-focus #holdemRaise{grid-row:auto;margin:0}.seat-action-focus #holdemRaise label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.seat-action-focus #holdemRaise .row{display:grid;grid-template-columns:minmax(0,1fr) 52px}.seat-action-focus input{width:100%}.seat-action-focus .seat-action-player{padding:7px}.seat-action-focus .seat-action-helper{padding:7px;display:flex;align-items:center;gap:8px}.seat-action-focus .seat-action-helper .action-role{margin:0}.seat-action-focus .helper-dock{flex:1}.holdem-table .table-center{height:28px}.holdem-table .table-center>.pot-chips{width:45px;height:32px;bottom:calc(100% + 18px)}.holdem-table.table-immersive .table-center>strong{font-size:26px}.holdem-table.table-immersive .table-center .table-phase{font-size:11px}.table-center>small:last-child{top:calc(100% + 33px)}}
+
+@media(orientation:landscape) and (max-height:600px){.holdem-table-layout .poker-surface[data-density] .table-seat{height:48px;min-height:48px;padding:6px 3px 4px!important}.holdem-table-layout .poker-surface[data-density] .table-seat .seat-name{flex-shrink:0;line-height:12px;font-size:10px}.holdem-table-layout .poker-surface[data-density] .table-seat strong{flex-shrink:0;line-height:16px;font-size:15px}}
+@media(orientation:portrait){.holdem-table .poker-surface[data-density=dense] .table-seat{width:clamp(56px,17vw,84px)}}
+
+@media(orientation:portrait) and (max-height:700px){.holdem-table-layout .poker-surface[data-density] .table-seat{height:64px!important;min-height:64px!important;padding:4px 3px!important;gap:1px}.holdem-table-layout .poker-surface[data-density] .table-seat .seat-name{font-size:10px;line-height:12px;flex-shrink:0}.holdem-table-layout .poker-surface[data-density] .table-seat .seat-status,.holdem-table-layout .poker-surface[data-density] .table-seat .seat-bet{font-size:7px;line-height:9px;flex-shrink:0}.seat-action-focus .seat-action-player{padding:7px}.seat-action-focus .holdem-actions{display:grid;gap:6px}.seat-action-focus .holdem-actions .row{margin:0}.seat-action-focus #holdemRaise{margin:0}.seat-action-focus #holdemRaise label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.seat-action-focus button,.seat-action-focus input{height:32px;min-height:32px;padding:5px 7px}.seat-action-focus .holdem-actions>button.wide{margin:0}.holdem-table .table-center .table-phase{font-size:11px;padding:3px 8px}.table-center>small:last-child{top:calc(100% + 32px)}}
+
+.poker-surface[data-own-turn=true] .table-center>small:last-child{display:none!important}
+
+/* The seat number stays fixed while only a long nickname moves. */
+.table-seat .seat-heading{width:100%;display:flex;align-items:center;justify-content:center;gap:3px;min-width:0;flex-shrink:0}.table-seat .seat-number{font-size:9px;line-height:14px;font-weight:700;color:#e7c684;flex:none}.table-seat .seat-name{min-width:0;max-width:100%;overflow:hidden;white-space:nowrap;flex:0 1 auto;display:block;text-align:left}.table-seat .seat-name>span{display:inline-block;white-space:nowrap}.table-seat .scrolling-name>span{animation:seat-name-scroll var(--name-duration,7s) ease-in-out infinite}.table-seat:focus-visible .scrolling-name>span{animation-play-state:paused}.table-seat .my-name{text-decoration:none}.table-seat .my-name>span{text-decoration:underline;text-underline-offset:2px}.table-seat .seat-number+.my-name{color:#f1ca79}.deal-marker{top:-16px;right:2px}
+@keyframes seat-name-scroll{0%,15%,100%{transform:translateX(0)}55%,75%{transform:translateX(var(--name-travel))}}
+@media(prefers-reduced-motion:reduce){.table-seat .scrolling-name>span{animation:none}.table-seat .scrolling-name{overflow-x:auto;scrollbar-width:none}}
+
+/* Rectangular seat labels and a clear per-player hand ledger. */
+.table-seat .seat-heading{justify-content:flex-start;gap:5px}.table-seat .seat-number{display:grid;place-items:center;flex:0 0 17px;height:17px;border-radius:4px;border:1px solid #b99c65;background:linear-gradient(#ecd4a2,#c6a16b);color:#2b4033;font-size:10px;line-height:1;font-weight:800;box-shadow:inset 0 1px 0 #fff8}.table-seat .seat-name{flex:1;line-height:17px!important;font-size:11px}.table-seat{border-radius:11px;box-shadow:0 2px 0 #10281f,0 5px 12px #071b2840}.player-hand-summary{display:grid;gap:7px;padding:12px 14px;margin-bottom:16px;background:#edf2e6;border:1px solid #d2dfcb;border-radius:12px;color:#365945}.player-hand-summary span,.player-hand-summary small{font-size:12px;color:#71846c}.player-hand-summary strong{font-size:18px}.bet-history-street{margin:0 0 16px}.bet-history-street h3{font-size:12px;color:#73886c;letter-spacing:1px;margin:0 0 8px;padding-bottom:7px;border-bottom:1px solid #d7e1d2}.bet-history-row{display:flex;align-items:center;gap:10px;padding:9px 0}.bet-history-seq{display:grid;place-items:center;width:23px;height:23px;background:#edf2e7;border-radius:5px;color:#7c8f72;font-size:10px;flex:none}.bet-history-row>div{display:grid;gap:3px;flex:1}.bet-history-row b{font-size:13px;color:#355c45}.bet-history-row small{font-size:10px;color:#7f9279}.bet-history-row>strong{font-size:14px;color:#926d36;white-space:nowrap}.bet-history-row>strong.returned{color:#4f8176}.history-empty{padding:22px 0;text-align:center;font-size:13px;color:#7f9177}.player-hand-details+.wide{margin-top:12px}
+@media(orientation:portrait) and (max-width:400px){.table-seat .seat-heading{gap:3px}.table-seat .seat-number{flex-basis:14px;height:15px;font-size:9px;border-radius:3px}.table-seat .seat-name{font-size:10px}.holdem-table .poker-surface[data-density=dense] .table-seat{width:clamp(62px,19vw,84px)}}
+@media(orientation:portrait) and (max-height:700px){.table-seat .seat-name{line-height:15px!important}.holdem-table-layout .poker-surface[data-density] .table-seat{height:64px!important;min-height:64px!important}}
+
+.table-center>small:last-child{width:100%;overflow-wrap:anywhere}
+
+/* Single-purpose prompts size to their content instead of filling the action area. */
+.seat-action-focus:has(.seat-action-helper):not(:has(.seat-action-player)),.seat-action-focus:has(.dock-wait):not(:has(.seat-action-helper)){width:max-content;max-width:calc(100% - 24px)}
+.seat-action-focus .seat-action-helper{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:12px}.seat-action-focus .seat-action-helper .action-role{margin:0;font-size:11px;letter-spacing:0;white-space:nowrap}.seat-action-focus .seat-action-helper .helper-dock{flex:0 1 auto;min-width:0}.seat-action-focus .seat-action-helper button.wide{width:auto;min-width:78px;min-height:34px;margin:0;padding:7px 12px;white-space:nowrap}.seat-action-focus:has(.dock-wait):not(:has(.seat-action-helper)) .seat-action-player{padding:7px 8px;border-radius:12px}.seat-action-focus .dock-wait button.wide{width:auto;min-width:84px;margin:0}.seat-action-focus .dock-wait{display:block}
+@media(orientation:portrait) and (max-height:700px){.seat-action-focus .seat-action-helper{padding:7px 9px;gap:8px}.seat-action-focus .seat-action-helper button.wide{height:32px;min-height:32px;padding:5px 10px}}
+
+/* Align the seat path with the photographed capsule rail, keeping edge cards inside the viewport. */
+.poker-surface{background-size:100% calc(100% - 64px);background-position:center}.seat-action-focus{bottom:var(--seat-action-bottom,calc(11% + 42px))!important}.seat-action-focus .seat-action-helper{display:block;text-align:left;padding:8px 10px}.seat-action-focus .seat-action-helper .action-role{margin:0 0 6px;display:block}.seat-action-focus .seat-action-helper .helper-dock{display:block}.seat-action-focus .seat-action-helper button.wide{min-width:64px;width:auto;padding:6px 12px}.seat-action-focus:has(.seat-action-helper):not(:has(.seat-action-player)){width:max-content}.seat-action-focus .seat-action-helper .action-role{font-size:10px}
+@media(orientation:landscape){.poker-surface{background-size:calc(100% - 64px) 100%}.seat-action-focus .seat-action-helper{display:block}}
+
+.poker-surface{background-color:#b6c0a2}@media(orientation:portrait){.poker-surface{background-size:calc(100% - 16px) calc(100% - 64px)}}
+
+@media(orientation:portrait) and (max-width:350px){.seat-action-focus .seat-action-player button{font-size:10px;padding:5px 4px;white-space:nowrap}}
+
+/* Keep every player plaque opaque; hover changes only its edge. */
+.holdem-table .table-seat{background:linear-gradient(145deg,#254b3e,#17362d) #17362d!important;opacity:1;filter:none!important;transition:border-color .12s,box-shadow .12s}.holdem-table .table-seat.acting{background:linear-gradient(145deg,#71572d,#3d3522) #3d3522!important}.holdem-table .table-seat.folded{opacity:1}.table-seat.folded .seat-name,.table-seat.folded strong{color:#a9b2a0}@media(hover:hover) and (pointer:fine){.table-seat:hover:not(:disabled){border-color:#dfc387}}
+.seat-history-popover{position:absolute;z-index:6;width:176px;max-width:calc(100% - 16px);max-height:calc(100% - 16px);overflow-y:auto;overscroll-behavior:contain;border:1px solid #bfa774;border-radius:9px;background:#fffbee;color:#355643;box-shadow:0 5px 18px #0c271d55;padding:9px}.seat-history-heading{display:flex;align-items:center;gap:6px;margin-bottom:8px}.seat-history-heading>b{font-size:11px;flex:1;min-width:0;overflow-wrap:anywhere}.seat-history-heading button{flex:none;min-height:22px;height:22px;width:22px;padding:0;font-size:17px;border:0;background:transparent!important}.seat-history-popover .player-hand-summary{padding:0;margin:0 0 9px;border:0;background:none;gap:4px}.seat-history-popover .player-hand-summary span,.seat-history-popover .player-hand-summary small{font-size:9px}.seat-history-popover .player-hand-summary strong{font-size:11px}.seat-history-popover .seat-bet-details{max-height:180px;overflow-y:auto}.seat-history-popover .bet-history-street{margin:0 0 9px}.seat-history-popover .bet-history-street h3{font-size:9px;margin-bottom:4px;padding-bottom:4px}.seat-history-popover .bet-history-row{gap:5px;padding:5px 0}.seat-history-popover .bet-history-seq{width:16px;height:18px;font-size:8px}.seat-history-popover .bet-history-row b,.seat-history-popover .bet-history-row>strong{font-size:10px}.seat-history-popover .bet-history-row small{font-size:8px}.seat-history-popover .history-empty{padding:10px 0;margin:0;font-size:10px}.seat-history-manage{width:auto;min-height:26px;padding:4px 9px;font-size:10px;margin-top:6px}.holdem-table-layout:has(.seat-history-popover) .seat-action-focus{visibility:hidden}
+
+/* One continuous floor covers the whole scene, including all corner tools.
+   The table photograph is inset independently and feathered into that floor. */
+.holdem-table-layout{background:url('assets/holdem-floor-v1.webp') center / cover no-repeat;isolation:isolate}
+.holdem-table .poker-surface{background:none!important;border-radius:0;--table-inset-x:16px;--table-inset-y:48px}
+.poker-surface::before{content:"";position:absolute;inset:var(--table-inset-y) var(--table-inset-x);z-index:-1;pointer-events:none;background:url('assets/holdem-table-v1.webp') center / 100% 100% no-repeat;mask-image:linear-gradient(to right,transparent,#000 12px,#000 calc(100% - 12px),transparent),linear-gradient(to bottom,transparent,#000 12px,#000 calc(100% - 12px),transparent);mask-composite:intersect}
+@media(orientation:landscape){.holdem-table .poker-surface{--table-inset-x:48px;--table-inset-y:16px}.poker-surface::before{background-image:url('assets/holdem-table-landscape-v1.webp')}}
+
+/* Helper message and action are separate elements, with table visible between. */
+.holdem-table .seat-action-focus .seat-action-helper{display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.holdem-table .seat-action-focus .seat-action-helper .action-role{display:block;margin:0;padding:4px 8px;border:1px solid #7daebc;border-radius:6px;background:#e5f1f4;color:#275460;font-size:10px;line-height:1.4;white-space:nowrap}
+.holdem-table .seat-action-focus .seat-action-helper .helper-dock{flex:none;display:block;width:auto}
+.holdem-table .seat-action-focus .seat-action-helper button.wide{width:auto;min-width:64px;margin:0;border-radius:9px}
+
+/* Compact progress shares the top row with the two corner controls. */
+.holdem-table .table-detail-menu{top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right))}
+.holdem-table .table-immersive-toggle{top:max(10px,env(safe-area-inset-top));left:max(10px,env(safe-area-inset-left))}
+.holdem-table .table-stage .holdem-steps,.holdem-table.table-immersive .table-stage .holdem-steps{position:absolute;z-index:2;top:calc(max(10px,env(safe-area-inset-top)) + 5px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:min(320px,calc(100% - 108px));height:24px;margin:0;padding:2px 4px;gap:2px;border:1px solid #e7e6ce88;border-radius:7px;background:#fffbeddd}
+.holdem-table .table-stage .holdem-steps li{display:grid;place-items:center;min-width:0;padding:0;font-size:9px;line-height:18px;white-space:nowrap;border-radius:4px;background:transparent;color:#67715e}
+.holdem-table .table-stage .holdem-steps li.current{background:#e4c896;color:#594524;font-weight:700}
+
+.holdem-table .table-seat.settlement-eligible{border-color:#e4c37d;cursor:pointer}
+.holdem-table .table-seat.settlement-winner{background:linear-gradient(145deg,#71572d,#3d3522)!important;border-color:#ffe29a;box-shadow:0 0 0 2px #efc876,0 4px 12px #13291f77}
+.table-seat.settlement-winner .seat-status{color:#ffe29a;font-weight:700}
+.holdem-table .table-seat.settlement-ineligible{border-color:#7a8e7d;cursor:default}.table-seat.settlement-ineligible .seat-heading,.table-seat.settlement-ineligible strong{color:#aebdad}
+.holdem-table .table-center.table-settlement-center{width:min(200px,46%);height:auto;gap:7px}
+.table-settlement-center .settlement-pool-nav{display:flex;align-items:center;justify-content:center;gap:8px;width:100%}.settlement-pool-nav b{font-size:12px;color:#ffe1a1}.settlement-pool-nav button{width:25px;min-height:25px;height:25px;padding:0;border-radius:6px;font-size:19px}
+.holdem-table .table-center.table-settlement-center>strong{font-size:25px}.table-settlement-center p{margin:0;color:#f7edd0;font-size:10px;line-height:1.5}
+.holdem-table .table-center.table-settlement-center>small{position:static!important;width:100%;font-size:10px;line-height:1.4;color:#c7dac2}.table-settlement-center .settlement-selected{max-height:42px;overflow-y:auto;overflow-wrap:anywhere}
+@media(orientation:landscape) and (max-height:600px){.holdem-table .table-center.table-settlement-center{gap:4px;top:44%}.table-settlement-center p{font-size:9px}.holdem-table .table-center.table-settlement-center>strong{font-size:21px}}
+.holdem-table .settlement-pool-nav{align-items:center;gap:10px}
+.holdem-table .settlement-pool-nav b{line-height:25px;margin:0}
+.holdem-table .settlement-pool-nav button,.holdem-table .settlement-pool-nav button:disabled{display:grid;place-items:center;flex:none;width:25px;height:25px;min-height:25px;padding:0;border:0;border-radius:0;background:transparent!important;box-shadow:none;color:#f0ce80!important;font-size:26px;line-height:1;opacity:1}
+.holdem-table .settlement-pool-nav button:disabled{opacity:.35}
+.holdem-table .settlement-pool-nav button:focus-visible{outline:1px solid #f0ce80;outline-offset:2px}
+
+/* Match the upper rail visually to the lower trio; keep full scene bounds. */
+@media(orientation:portrait){.poker-surface::before{transform:translateY(8px)}.holdem-table .table-center{top:calc(50% + 8px)}}
+.holdem-table .table-seat.folded,.holdem-table .table-seat.settlement-ineligible{background:linear-gradient(145deg,#59615c,#3c4440) #3c4440!important;border-color:#8b9690;box-shadow:0 3px 0 #28332e,0 4px 10px #071b2833;opacity:1}
+.table-seat.folded .seat-name,.table-seat.folded strong,.table-seat.folded .seat-status,.table-seat.folded .seat-bet,.table-seat.settlement-ineligible .seat-name,.table-seat.settlement-ineligible strong{color:#bec5bd!important}.table-seat.folded .seat-number,.table-seat.settlement-ineligible .seat-number{background:#8c9488;color:#2d3830;border-color:#aeb6a5}
+
+.holdem-table #tableAutoReady{width:auto;min-width:80px;padding:7px 10px;font-size:11px;white-space:nowrap}
+.holdem-table #tableAutoReady[aria-pressed=true]{background:#f1dfb4;border-color:#b79250;color:#594524}@media(hover:hover) and (pointer:fine){
+
+.holdem-table .seat-action-helper button.primary:hover:not(:disabled){background:#ffb657!important;border-color:#dc8a2b}}
+.holdem-table .seat-action-helper button.primary:focus-visible{outline:2px solid #fff0ba;outline-offset:3px}
+.holdem-table .seat-action-helper button.primary:disabled{box-shadow:none}
+/* The ready action is a standalone button, without a surrounding panel. */
+.holdem-table .seat-action-focus:has(.dock-wait) .seat-action-player{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
+
+/* Pot size changes the stack count, never the layout footprint. */
+.holdem-table .table-center>.chip-pile{width:96px;height:58px;max-width:100%;overflow:visible}
+.chip-pile img{position:absolute;left:var(--pile-x);top:var(--pile-y);z-index:var(--pile-z);width:51%;height:75%;object-fit:contain;transform:translate(-50%,-50%) rotate(var(--pile-r));filter:drop-shadow(0 2px 2px #132c2370)}
+.chip-pile[data-chip-count="0"]{visibility:hidden}.chip-pile[data-chip-count="1"] img{width:70%;height:100%}
+.chip-pile.rich-pot:after{content:'✦';position:absolute;right:8%;top:7%;font-size:14px;color:#ffe0a3;text-shadow:0 0 6px #ffc757;animation:pot-glimmer 3s ease-in-out infinite;pointer-events:none}
+@keyframes pot-glimmer{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:.9;transform:scale(1.1)}}
+.holdem-table .table-settlement-center>.chip-pile{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%)}
+@media(orientation:portrait) and (max-height:700px){.holdem-table .table-center>.chip-pile{width:68px;height:42px}.chip-pile.rich-pot:after{font-size:10px}}
+@media(orientation:landscape) and (max-height:600px){.holdem-table .table-center>.chip-pile{width:64px;height:38px}.chip-pile.rich-pot:after{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.chip-pile.rich-pot:after{animation:none}}
+
+@media(orientation:portrait) and (max-width:480px){
+ .seat-action-focus #holdemRaise label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+ .seat-action-focus .seat-action-player{padding:7px}
+ .seat-action-focus .holdem-actions{display:grid;gap:6px}
+ .seat-action-focus .holdem-actions .row{margin:0;gap:5px}
+ .seat-action-focus #holdemRaise{margin:0}
+ .seat-action-focus #holdemRaise .row{grid-template-columns:minmax(0,1fr) 48px}
+ .seat-action-focus .holdem-actions>button.wide{margin:0}
+ .seat-action-focus input{font-size:16px}
+}
+
+/* Turn controls occupy the free center, with a light translucent backing. */
+.holdem-table .seat-action-focus.central-actions{top:var(--seat-action-top,60%);bottom:auto!important;transform:translate(-50%,-50%)}
+.holdem-table-layout:has(.central-actions) .table-center:not(.free-center){top:38%}
+.holdem-table .central-actions .seat-action-player{background:rgba(255,247,231,.74);border-color:#d7bc8180;box-shadow:0 3px 12px #102e2428}
+@media(orientation:portrait) and (max-width:480px){
+ .holdem-table .central-actions button{font-size:11px;line-height:1.2;height:36px;min-height:36px;padding:5px 6px}
+ .holdem-table .central-actions .seat-action-player{padding:6px;border-radius:12px}
+ .holdem-table .central-actions .holdem-actions{gap:5px}
+ .holdem-table .central-actions input{height:36px;min-height:36px;padding:5px 6px}
+}
+
+@media(orientation:portrait) and (max-height:700px){
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center){top:32%}
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center)>.chip-pile{bottom:auto;top:50%;left:calc(50% - 48px);transform:translateY(-50%);width:36px;height:28px}
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center)>strong{margin-left:26px}
+}
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table .seat-action-focus.central-actions{left:62%;width:min(320px,40%)}
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center){left:30%;top:50%;width:18%}
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center)>.chip-pile{bottom:auto;top:50%;left:-6px;transform:translateY(-50%);width:36px;height:28px}
+ .holdem-table-layout:has(.central-actions) .table-center:not(.free-center)>strong{margin-left:24px}
+ .holdem-table .central-actions button{font-size:11px;padding:5px 6px}
+}
+/* Shared immersive tables: the scene includes the tabletop and its surroundings. */
+.casual-table.theme-three-card{--table-scene:url('./assets/zhajinhua-scene-v1.webp');--seat-bg:#492d39;--seat-edge:#c4a16c}
+.casual-table.theme-free{--table-scene:url('./assets/free-score-scene-v1.webp');--seat-bg:#214b56;--seat-edge:#bb9e76}
+.casual-table .holdem-table-layout{background-image:var(--table-scene);background-size:100% 100%;background-position:center}
+.casual-table .poker-surface::before{display:none}
+.casual-table .table-seat{background:var(--seat-bg)!important;border-color:var(--seat-edge);transition:none;opacity:1;padding:5px!important}
+.casual-table .seat-title{display:flex;align-items:center;gap:4px;width:100%;min-width:0}
+.casual-table .seat-title .seat-number{flex:none}.casual-table .seat-title .seat-name{min-width:0;flex:1;text-align:left}
+.casual-table .table-seat.pick-candidate{border-color:#f5d083;box-shadow:0 0 0 1px #e8be6d,0 3px 0 #10281f}
+.casual-table .table-seat.winner-selected{background:#796034!important;box-shadow:0 0 0 2px #ffe3a2,0 3px 0 #503a1f;border-color:#ffe3a2}
+.casual-table .table-seat.folded{background:#464a48!important;border-color:#8b9690}
+.casual-stage{position:absolute;left:50%;top:10px;transform:translateX(-50%);max-width:calc(100% - 108px);padding:5px 12px;border-radius:8px;background:#fff8e3db;color:#665437;font-size:10px;line-height:14px;text-align:center;z-index:3;white-space:nowrap;overflow:hidden}
+.casual-table .table-center>small:last-child{font-size:10px;line-height:1.4;width:140%;text-shadow:0 1px 3px #151d1c;white-space:normal}
+.casual-table .table-center>small:first-of-type{color:#f0e5cd}.casual-table .table-center .table-phase{font-size:11px;background:#182d284f;color:#fff1d2;border-color:#d4b87888;white-space:normal;min-width:100px;max-width:160px}
+.casual-table .table-center.free-center>strong{font-size:25px}.casual-table .free-center>small:last-child{top:calc(100% + 47px)}
+.casual-table .central-actions .holdem-actions{display:grid;gap:5px}.casual-table #casualBet{margin:0}.casual-table #casualBet .row{display:grid;grid-template-columns:minmax(0,1fr) 48px;gap:5px;margin:0}.casual-table #casualBet input{width:100%;font-size:16px}
+.casual-table .central-actions .holdem-actions>.row{margin:0;gap:5px}.casual-table .central-actions .holdem-actions>.wide{margin:0}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+.casual-table #casualAutoReady{width:auto;padding:7px 10px;font-size:11px;white-space:nowrap}.casual-table #casualAutoReady[aria-pressed=true]{background:#f1dfb4;color:#594524}
+.casual-table .seat-action-focus:has(.dock-wait) .seat-action-player{background:transparent;border:0;padding:0}
+.casual-table .seat-action-focus:not(:has(.holdem-actions)){width:max-content;overflow:visible}
+.casual-table .seat-action-helper button{width:auto;min-width:64px}
+.casual-popover{background:#fff8eb;backdrop-filter:none;width:176px}
+.casual-popover input{height:36px;min-height:36px;font-size:16px;padding:6px 8px;width:100%}.casual-popover label,.casual-popover summary{font-size:10px;line-height:1.4;margin-bottom:5px}.casual-popover .rules{font-size:9px;line-height:1.5;margin:8px 0}.casual-popover .wide{min-height:36px;font-size:11px;margin-top:8px;padding:6px 8px}
+.gift-presets{display:flex;gap:5px;margin:7px 0}.gift-presets button{flex:1;min-height:28px;font-size:10px;padding:4px}.gift-records{margin-top:10px}.casual-records{max-height:300px;overflow-y:auto;overscroll-behavior:contain}
+.casual-popover .score-record{padding:7px 0}.casual-popover .score-record b,.casual-popover .score-record time{font-size:9px}
+.casual-layout:has(.casual-popover) .seat-action-focus{visibility:hidden}.casual-table.editing-seats .table-center>small:last-child{display:none}
+@media(orientation:landscape) and (max-height:600px){.casual-table .central-actions .holdem-actions{grid-template-columns:1fr 1fr;gap:5px}.casual-table .central-actions .holdem-actions>.wide{grid-column:1/-1}.casual-table .seat-action-focus.central-actions{width:min(240px,32%)}.casual-table .seat-action-focus.central-actions button{min-height:30px;height:30px}.casual-table .central-actions input{height:30px;min-height:30px}.casual-stage{font-size:9px;padding:4px 10px}.casual-table .table-center .table-phase{font-size:10px}}
+.casual-table.theme-free .table-seat{height:56px!important;min-height:56px!important;gap:2px!important}
+.casual-table.theme-free .table-seat .seat-status:empty{display:none}.casual-table.theme-free .table-seat .seat-status{font-size:8px;line-height:10px}
+.free-mode-switch{display:flex;gap:5px}.free-mode-switch button{width:auto;min-width:48px;min-height:34px;font-size:11px;padding:6px 8px}.free-mode-switch button[aria-pressed=true]{background:#ddba79;color:#3c3624;border-color:#b68e48}
+.collection-message{font-size:11px;color:#355643;line-height:1.5;margin:0}.collection-focus small{font-size:9px;color:#355643}
+@media(orientation:landscape) and (min-height:601px){.casual-layout:has(.central-actions) .table-center{top:32%}}
+.free-center #freeAllocate{min-height:30px;width:auto;padding:5px 10px;margin-top:2px;border-color:#b28a4c;background:#dfbd7a;color:#493b21;font-size:10px;box-shadow:0 2px 0 #694a29}
+@media(orientation:portrait) and (max-height:700px){.casual-table.theme-free .free-center>small:last-child{top:calc(100% + 39px)}}
+/* All table scenes now include both the table and the surrounding room. */
+.holdem-table:not(.casual-table) .holdem-table-layout{background-image:url('./assets/holdem-scene-v2.webp');background-size:100% 100%;background-position:center}
+.holdem-table:not(.casual-table) .poker-surface::before{display:none}
+@media(orientation:landscape){
+ .holdem-table:not(.casual-table) .holdem-table-layout{background-image:url('./assets/holdem-scene-landscape-v2.webp')}
+ .casual-table.theme-three-card{--table-scene:url('./assets/zhajinhua-scene-landscape-v1.webp')}
+ .casual-table.theme-free{--table-scene:url('./assets/free-score-scene-landscape-v1.webp')}
+}
+.free-score-feedback{position:absolute;z-index:8;left:50%;top:0;color:#ffe4a2;font-size:13px;font-weight:700;text-shadow:0 2px 3px #13251f;pointer-events:none;white-space:nowrap}
+
+/* Direct tabletop scoring entry points. */
+.casual-table .free-center{cursor:pointer;pointer-events:auto;isolation:isolate}
+.free-center:focus-visible{outline:2px solid #efce8a;outline-offset:8px;border-radius:8px}
+.free-center:before{content:'';position:absolute;inset:-70px -8px -65px;z-index:-1}
+.card-score-modes{margin:8px 0;gap:8px}.card-score-modes button{flex:1}
+
+.casual-table .table-center.free-center{height:auto;min-height:76px;width:min(160px,40%);padding:10px 12px;border:1px solid #d7c29a99;border-radius:12px;background:#183d43ad;box-shadow:0 3px 12px #10272b40;gap:4px;color:#ffedbd}
+.casual-table .free-center>small:first-of-type{position:static;display:block;white-space:nowrap;font-size:12px}
+.casual-table .free-center>strong{font-size:25px}.casual-table .free-center>small:last-child{position:static;width:auto;font-size:9px}
+.casual-table .free-center>.table-phase{position:static;min-width:0;border:0;background:transparent;padding:0;font-size:10px}
+.free-center:before{display:none}.custom-scoring-rules{white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;border:1px solid #cddbc7;border-radius:10px;background:#eef3e9;margin:12px 0;line-height:1.7;font-size:14px}
+#scoringRulesText{width:100%;min-height:180px;padding:12px;border:1px solid #cddbc7;border-radius:10px;font:inherit;font-size:16px;resize:vertical}
+
+/* Phase, count and guidance share normal flow; fixed offsets must not overlap text. */
+.table-status-stack{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:min(240px,140%);display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.holdem-table .table-center .table-status-stack>.table-phase{position:static;max-width:100%;min-width:0;white-space:normal;line-height:1.4;margin:0;padding:4px 10px}
+.table-status-stack>small{display:block;position:static;width:100%;font-size:10px;line-height:1.5;margin:0;color:#e5e6cf;overflow-wrap:anywhere;text-shadow:0 1px 3px #12271c}
+.table-status-stack .table-interaction-hint{font-size:9px;color:#cfdbca}
+.poker-surface[data-own-turn=true] .table-status-stack>.table-status-detail{display:none}
+.casual-table .table-center.free-center{gap:7px}.casual-table .free-center>.table-phase{line-height:1.5;max-width:100%;white-space:normal}
+.casual-popover .gift-presets{margin-top:8px;margin-bottom:10px;gap:8px}.casual-popover form>.rules{margin:10px 0;line-height:1.5}
+.casual-popover form>details{margin:10px 0}.casual-popover .gift-records{margin-top:12px}.holdem-table dialog .tool-list{gap:10px}
+@media(orientation:landscape) and (max-height:600px){.table-status-stack{gap:6px;top:calc(100% + 6px);width:min(220px,150%)}.table-status-stack>small{font-size:9px}.table-status-stack .table-interaction-hint{font-size:8px}}
+@media(orientation:portrait) and (max-height:700px){
+ .holdem-table-layout:has(.seat-action-helper) .table-center:not(.free-center):not(.table-settlement-center){top:37%}
+ .holdem-table-layout:has(.seat-action-helper) .table-center>.chip-pile{height:36px;width:60px;bottom:calc(100% + 18px)}
+ .table-status-stack{gap:6px}.table-status-stack>small{font-size:9px}
+}
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table-layout:has(.seat-action-helper) .table-center:not(.free-center):not(.table-settlement-center){left:30%;top:44%;width:22%;height:28px}
+ .holdem-table-layout:has(.seat-action-helper) .table-center>.chip-pile{left:-6px;top:50%;bottom:auto;transform:translateY(-50%);width:36px;height:28px}
+ .holdem-table-layout:has(.seat-action-helper) .table-center>strong{margin-left:24px}
+ .holdem-table-layout:has(.seat-action-helper) .table-status-stack{display:grid;grid-template-columns:auto minmax(0,1fr);width:210%;max-width:240px;gap:6px 8px;align-items:center}
+ .holdem-table-layout:has(.seat-action-helper) .table-status-stack>.table-interaction-hint{grid-column:1/-1}
+ .seat-action-focus:has(.seat-action-helper){left:68%;top:50%;bottom:auto!important;transform:translate(-50%,-50%);width:auto;max-width:28%}
+}
+
+.gift-submit-actions{display:flex;gap:8px;margin-top:10px}.gift-submit-actions button{flex:1;min-height:44px;font-size:12px;padding:8px}
+.table-status-stack .table-interaction-hint{width:fit-content;max-width:100%;justify-self:center}
+#networkNotice{position:fixed;z-index:100;top:max(6px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);max-width:calc(100% - 24px);padding:8px 12px;background:#fff2d9f5;color:#7a421a;border:1px solid #d6a561;border-radius:10px;font-size:12px;line-height:1.5;box-shadow:0 2px 8px #0003;pointer-events:none}
+#networkNotice[hidden]{display:none}#networkNotice[data-kind=pending]:before{content:'';display:inline-block;width:10px;height:10px;border:2px solid #bb995f;border-top-color:transparent;border-radius:50%;margin-right:7px;animation:network-spin 1s linear infinite}
+@keyframes network-spin{to{transform:rotate(360deg)}}
+
+.rule-tools,.favorite-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.rule-tools button,.favorite-actions button{min-height:44px;font-size:13px;padding:8px 12px}.rule-favorite{padding:12px 0;border-bottom:1px solid #d4decc}.rule-favorite h3{margin:0 0 8px;font-size:15px}.rule-favorite textarea{width:100%;font:inherit;font-size:14px;line-height:1.6;padding:10px;resize:vertical;border:1px solid #ccd8c4;border-radius:8px;background:#f6f8ef}.rule-favorites{max-height:55dvh;overflow-y:auto;overscroll-behavior:contain}
+
+/* Opening a dialog focuses its title, while keyboard navigation keeps button focus visible. */
+.dialog-heading h2[tabindex="-1"]:focus{outline:none}
+
+.free-corner-tools{display:flex;gap:8px}.free-trade-feed{position:absolute;left:50%;transform:translateX(-50%);display:grid;gap:7px;z-index:0;pointer-events:none;color:#fff3cd}.free-trade-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 6px;padding:4px 6px;border-bottom:1px solid #edce8745;font-size:10px;line-height:1.4;text-shadow:0 1px 2px #152c30}.free-trade-row>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.free-trade-row strong{font-size:10px;color:#f2d292;white-space:nowrap}.free-trade-row small{grid-column:1/-1;font-size:8px;color:#d9e1cd}.trade-empty{font-size:9px;line-height:1.5;text-align:center}
+@media(orientation:landscape) and (max-height:600px){.free-trade-row{padding:2px 4px;font-size:9px}.free-trade-row small{display:none}.free-trade-feed{gap:3px}.free-trade-row strong{font-size:9px}}
+
+@media(orientation:portrait) and (max-height:700px){.free-trade-row:nth-child(n+2){display:none}.free-trade-row small{display:none}.free-trade-row{font-size:9px;padding:2px 4px}.free-trade-row strong{font-size:9px}}
+@media(orientation:landscape) and (max-height:600px){.casual-table .table-center.free-center{min-height:0;width:160px;padding:6px 8px;gap:3px}.casual-table .free-center>strong{font-size:20px}.casual-table .free-center>small:first-of-type{font-size:10px}.casual-table .free-center>.table-phase{font-size:8px}.casual-table .free-center>small:last-child{font-size:8px}.casual-table .free-center>.chip-pile{left:-42px;top:50%;bottom:auto;transform:translateY(-50%);width:36px;height:26px}}
+
+@media(orientation:landscape) and (max-height:600px){.casual-table .free-center>.chip-pile{left:8px;width:26px;height:20px}}
+
+@media(max-height:700px){.free-trade-row>span:before{content:attr(data-kind);color:#e9cc8b}}
+
+/* Player detail panels are solid; table copy and score effects stay underneath. */
+.seat-history-popover{z-index:10;opacity:1;isolation:isolate;backdrop-filter:none;filter:none}
+
+/* Explicit button/panel menu avoids native details toggle conflicts. */
+.table-menu-toggle{position:relative;z-index:4;padding:0;min-height:34px;box-shadow:none}.table-detail-menu .table-detail-tools{z-index:3}.table-menu-toggle[aria-expanded=true]{border-color:#bc9854;background:#f8e7c3}
+/* Compact ledger: source, amount and time occupy the same row. */
+.free-trade-feed{gap:2px;overflow-y:auto;overscroll-behavior:contain;pointer-events:auto;scrollbar-width:thin;padding:0 2px}
+.free-trade-row{display:grid;grid-template-columns:minmax(0,1fr) auto 38px;gap:4px;align-items:center;padding:2px 0;font-size:9px;line-height:1.3;min-height:17px}
+.free-trade-row:nth-child(n){display:grid}.free-trade-row>span:before{content:attr(data-kind);color:#e9cc8b}.free-trade-row strong{font-size:9px}.free-trade-row time{font-size:7px;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;color:#d9dfcb}
+@media(orientation:portrait) and (max-height:700px){.casual-table .free-center>.chip-pile{left:8px;top:50%;bottom:auto;transform:translateY(-50%);width:24px;height:20px}.free-trade-row{font-size:8px;min-height:15px;padding:1px 0;gap:3px}.free-trade-row strong{font-size:8px}}
+
+.group-player-picker{min-width:0;border:1px solid #c9d8c1;border-radius:12px;padding:8px 10px;margin:8px 0 14px}.group-player-picker legend{font-size:12px;color:#617765;padding:0 5px}.group-player-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 8px;max-height:180px;overflow:auto;overscroll-behavior:contain}.group-player-picker .group-player-choice{display:flex;align-items:center;gap:8px;min-height:44px;margin:0;font-size:13px}.group-player-choice input[type=checkbox]{width:18px;height:18px;min-height:0;flex:0 0 18px;margin:0;accent-color:#597b57}.group-player-choice span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.group-player-picker>.group-player-choice{border-bottom:1px solid #c9d8c1;margin-bottom:4px}
+
+#freeHistoryShortcut{cursor:pointer;border:1px solid #c4aa78;min-height:30px;width:auto;margin:0;box-shadow:none}@media(hover:hover) and (pointer:fine){#freeHistoryShortcut:hover{background:#fff3cd}}.casual-table .collection-focus{z-index:12}.casual-table .collection-focus .seat-action-player{background:#fff8eb;border:1px solid #c9a664;box-shadow:0 5px 18px #0005;backdrop-filter:none}.gift-confirm-dialog{max-width:360px}.gift-confirm-dialog h2:focus{outline:none}
+/* Zha Jin Hua: readable actions and explicit card selection, distinct from turn glow. */
+.theme-three-card .seat-action-focus button{font-size:15px;line-height:1.25;min-height:44px;height:auto;padding:8px 10px}
+.theme-three-card .seat-action-focus .holdem-actions{gap:8px}
+.theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 62px;gap:8px}
+.theme-three-card #casualBet input{height:44px;min-height:44px;font-size:18px}
+.theme-three-card .poker-basics{gap:8px;margin:0}
+.theme-three-card .seat-action-focus:has(.dock-wait){min-width:150px}
+.selecting-players .poker-surface{isolation:auto}
+.selecting-players .table-selection-shade{position:absolute;inset:0;z-index:50;background:#151b1dc2;backdrop-filter:grayscale(1);border-radius:inherit}
+.selecting-players .table-seat{z-index:51;filter:grayscale(1);opacity:.42;pointer-events:none}
+.selecting-players .table-seat.pick-candidate{z-index:53;filter:none;opacity:1;pointer-events:auto;border-color:#fff1b9;box-shadow:0 0 0 2px #d3a44d,0 4px 12px #0008}
+.selecting-players .table-seat.winner-selected{box-shadow:0 0 0 3px #ffe392,0 4px 12px #0008}
+.selection-medal{position:absolute;right:-5px;top:-10px;display:grid;place-items:center;width:30px;height:26px;border-radius:5px 5px 10px 10px;background:#ffe6a3;color:#47341a;border:1px solid #b18a3d;font-size:11px;font-weight:800;box-shadow:0 2px 4px #0005}
+.table-selection-notice{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);z-index:54;width:max-content;max-width:50%;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;color:#fff5d0;text-shadow:0 2px 5px #000;pointer-events:none}
+.table-selection-notice strong{font-size:clamp(20px,3vw,28px);line-height:1.3;font-weight:800}
+.table-selection-notice small{font-size:13px;line-height:1.5}
+.table-selection-notice button{pointer-events:auto;width:auto;min-height:44px;font-size:15px;padding:8px 16px;background:#fff4d9;color:#493d29;text-shadow:none}
+.selecting-players .seat-action-focus{z-index:54}
+.selecting-players .seat-action-helper .action-role{display:none!important}
+.selecting-players .table-center{visibility:hidden}
+@media(orientation:landscape) and (max-height:600px){.table-selection-notice{top:48%;max-width:42%;gap:6px}.table-selection-notice strong{font-size:20px}.table-selection-notice small{font-size:12px}.theme-three-card .seat-action-focus.central-actions button{min-height:40px;height:auto;font-size:14px}.theme-three-card .central-actions input{min-height:40px;height:40px}}
+/* Dock the active form just above the software keyboard; scroll only within the form. */
+.input-keyboard .holdem-table .seat-action-focus:has(input){position:fixed!important;top:auto!important;bottom:calc(var(--keyboard-bottom,0px) + 8px)!important;left:50%!important;transform:translateX(-50%)!important;width:min(300px,calc(100% - 24px))!important;max-width:calc(100% - 24px)!important;max-height:calc(var(--table-viewport-height) - 24px);overflow:auto;z-index:90}
+.input-keyboard .casual-popover:has(input){position:fixed!important;top:auto!important;bottom:calc(var(--keyboard-bottom,0px) + 8px)!important;left:50%!important;transform:translateX(-50%)!important;width:min(300px,calc(100% - 24px))!important;max-height:calc(var(--table-viewport-height) - 24px)!important;overflow:auto}
+.input-keyboard dialog[open]{position:fixed;left:50%;transform:translateX(-50%);top:auto;bottom:calc(var(--keyboard-bottom,0px) + 8px);margin:0 auto;max-height:calc(var(--table-viewport-height) - 16px);overflow:auto}
+.theme-three-card .poker-basics button{padding:8px 6px;white-space:nowrap;min-width:0}
+.theme-three-card .seat-action-focus .holdem-actions,.theme-three-card .seat-action-focus .row>*{min-width:0}
+@media(max-width:360px){.theme-three-card .poker-basics button{font-size:13px;padding:8px 1px}.theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 54px;gap:6px}.theme-three-card .seat-action-focus .holdem-actions>.wide{font-size:13px;padding:8px 3px;white-space:nowrap}}
+.input-keyboard .theme-three-card .holdem-actions #casualBet{order:1}
+@media(orientation:landscape) and (max-height:600px){
+ .theme-three-card .seat-action-focus.central-actions{width:min(300px,42%);max-height:none}
+ .theme-three-card .central-actions .seat-action-player{padding:3px}
+ .theme-three-card .central-actions .holdem-actions{gap:6px}
+ .theme-three-card .central-actions .holdem-actions .row{gap:6px}
+ .theme-three-card .seat-action-focus.central-actions button,.theme-three-card .central-actions #casualBet input{min-height:38px;height:38px;padding:5px 6px}
+}
+@media(orientation:landscape) and (max-height:600px){.theme-three-card .casual-layout:has(.central-actions) .table-status-detail,.theme-three-card .casual-layout:has(.central-actions) .table-interaction-hint{display:none}}
+
+/* Keep persistent personal actions separate from the turn's betting form. */
+.theme-three-card .poker-basics-focus{position:absolute;z-index:5;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 24px);filter:drop-shadow(0 3px 6px #0004)}
+.theme-three-card .poker-basics-focus[hidden]{display:none}
+.theme-three-card .poker-basics-focus .poker-basics{display:flex;gap:10px}
+.theme-three-card .poker-basics-focus button{width:auto;min-width:72px;min-height:44px;font-size:17px;line-height:1.25;padding:9px 12px}
+.theme-three-card .seat-action-focus button{font-size:17px;padding:9px 10px}
+.theme-three-card #casualBet input{font-size:20px;min-height:44px}
+.theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 70px}
+.theme-three-card .seat-action-helper button{font-size:18px;padding:10px 16px;min-height:46px}
+.theme-three-card .seat-action-helper .action-role{font-size:13px}
+.casual-layout:has(.casual-popover) .poker-basics-focus,.input-keyboard .poker-basics-focus{visibility:hidden}
+@media(max-width:360px){.theme-three-card .seat-action-focus .holdem-actions>.wide{font-size:16px;padding:8px 4px}.theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 64px;gap:6px}}
+@media(orientation:landscape) and (max-height:600px){
+ .theme-three-card .central-actions .holdem-actions{grid-template-columns:1fr 1fr}
+ .theme-three-card .central-actions .holdem-actions>.wide{grid-column:auto}
+ .theme-three-card .seat-action-focus.central-actions button{font-size:16px;min-height:44px;height:auto;padding:7px 6px;white-space:nowrap}
+ .theme-three-card .central-actions #casualBet input{height:44px;min-height:44px;padding:5px 6px}
+ .theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 56px;gap:6px}
+}
+
+.theme-three-card .poker-basics-focus .poker-basics{width:100%;gap:8px}
+.theme-three-card .poker-basics-focus button{flex:1;min-width:0;padding:9px 4px}
+@media(orientation:portrait) and (max-height:700px){.theme-three-card .casual-layout:has(.central-actions) .table-status-stack{visibility:hidden}}
+
+.theme-three-card .poker-basics-focus{width:164px}
+@media(orientation:landscape) and (max-height:600px){.theme-three-card .central-actions .seat-action-player{padding:0;border-width:1px}.theme-three-card .seat-action-focus.central-actions{width:min(320px,42%)}}
+
+/* Actions must occlude table lettering and fit the actual gap between seats. */
+.theme-three-card .central-actions .seat-action-player{background:#fff4de;border-color:#d7bc81;backdrop-filter:none}
+.theme-three-card .casual-layout:has(.central-actions) .table-status-stack{visibility:hidden}
+
+.theme-three-card .poker-basics-focus.narrow-basics .poker-basics{gap:4px}
+.theme-three-card .poker-basics-focus.narrow-basics button{padding:8px 0;font-size:16px;white-space:normal;line-height:1.1}
+@media(orientation:portrait) and (max-height:520px){.theme-three-card .compact-header .room-heading{display:none}.theme-three-card .room-top.compact-header{margin-bottom:6px}.theme-three-card .room-toolbar{margin-bottom:0}}
+
+@media(orientation:portrait) and (max-width:360px){
+ .theme-three-card .central-actions .seat-action-player{padding:3px}
+ .theme-three-card #casualBet .row{grid-template-columns:minmax(0,1fr) 50px;gap:4px}
+ .theme-three-card #casualBet input{padding:4px;font-size:18px}
+ .theme-three-card .seat-action-focus button{padding:8px 3px;font-size:16px}
+ .theme-three-card .seat-action-focus .holdem-actions>.wide{font-size:15px;padding:8px 0;letter-spacing:0}
+}
+@media(orientation:portrait) and (max-height:520px){.theme-three-card .casual-layout:has(.central-actions) .table-center{visibility:hidden}}
+
+.compact-pot{display:none}
+@media(orientation:portrait) and (max-height:520px){.theme-three-card .compact-pot{display:inline}}
+
+/* Integral amount controls retain the original input and form events. */
+.score-stepper{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;align-items:stretch;gap:4px;width:100%;min-width:0}
+.score-stepper input{width:100%;min-width:0;margin:0;text-align:center;appearance:textfield;-moz-appearance:textfield}
+.score-stepper input::-webkit-inner-spin-button,.score-stepper input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.score-stepper .score-step-button{width:100%;min-width:0;min-height:44px;margin:0;padding:6px 0;font-size:22px;font-weight:600;line-height:1;background:#edf2e6;color:#365b42;border:1px solid #c5d4bb;border-radius:9px;touch-action:manipulation}
+.score-stepper .score-step-button:disabled{opacity:.45}
+.theme-three-card .central-actions .holdem-actions{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr)}
+.theme-three-card #casualBet,.theme-three-card #casualBet .row{display:contents}
+.theme-three-card #casualBet .score-stepper{grid-column:1/-1}
+.theme-three-card .central-actions .holdem-actions>.wide{grid-column:auto;white-space:normal}
+.theme-three-card .central-actions .score-stepper button{font-size:22px;padding:6px 0}
+.theme-three-card .central-actions .score-stepper input{padding:4px 0}
+@media(max-width:360px){.score-stepper{grid-template-columns:32px minmax(0,1fr) 32px;gap:3px}.theme-three-card .central-actions .holdem-actions>.wide{font-size:14px}}
+@media(orientation:landscape) and (max-height:600px){.theme-three-card .central-actions .holdem-actions{grid-template-columns:minmax(0,1.6fr) minmax(0,.7fr) minmax(0,1fr)}.theme-three-card #casualBet .score-stepper{grid-column:auto}.theme-three-card .central-actions .score-stepper{grid-template-columns:32px minmax(0,1fr) 32px;gap:3px}}
+
+@media(orientation:landscape) and (max-height:600px){
+ .theme-three-card .central-actions .holdem-actions{grid-template-columns:minmax(96px,1.4fr) minmax(48px,.6fr) minmax(82px,1fr)}
+ .theme-three-card .seat-action-focus.central-actions #casualCompare{white-space:nowrap;font-size:14px;padding:6px 1px}
+ .theme-three-card .central-actions #casualBet .score-stepper input{padding:4px 0;font-size:18px}
+}
+/* Admin controls use deliberate spacing rather than adjacent form elements. */
+#adminLogin{display:grid;gap:12px;margin:20px 0 16px}#adminLogin label,#adminLogin input,#adminLogin p,#adminLogin button{margin:0}#loginError:empty{display:none}#adminApp .room-top>.row{gap:12px}#adminApp .notice{margin:16px 0}
+.admin-selection-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:20px 0;padding:14px 16px;border:1px solid #cbd9c2;border-radius:12px;background:#f7f9ee}.admin-selection-bar label,.admin-room-choice{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;cursor:pointer}.admin-selection-bar input,.admin-room-choice input{width:20px;height:20px;min-height:0;margin:0;flex:none;accent-color:#53734c}.admin-selection-bar>span{flex:1;font-size:13px}.admin-selection-bar button{min-height:44px}.admin-room-choice{margin-bottom:12px;font-size:13px}.admin-rooms .rules{margin:12px 0 20px}.admin-clear-dialog .notice{margin:18px 0}.admin-clear-list{list-style:none;display:grid;gap:12px;max-height:30vh;overflow:auto;margin:20px 0;padding:0}.admin-clear-list li{display:grid;gap:5px}.admin-clear-list small{color:#77846b}.admin-clear-actions{gap:14px;margin-top:22px}.admin-clear-dialog .clear-error:empty{display:none}.admin-clear-dialog h2:focus{outline:none}
+
+.admin-password-hint{margin:0;font-size:14px;line-height:1.6;color:#6b785e}#resetAdminPassword{margin:0 0 18px}#adminApp .room-top>.row{flex-wrap:wrap}.admin-password-dialog form{display:grid;gap:12px}.admin-password-dialog form>label,.admin-password-dialog form>input,.admin-password-dialog form>p{margin:0}.admin-password-dialog .row{margin-top:8px;gap:14px}.admin-password-dialog .password-error:empty{display:none}.admin-password-dialog h2:focus{outline:none}
+
+#adminApp .home-button{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0;font-size:14px;line-height:1}#adminApp .home-button svg{display:block;width:20px;height:20px;flex:none}#adminApp .home-button span{font:inherit;line-height:1}@media(hover:hover) and (pointer:fine){
+
+/* Touch taps must not leave joined rooms in a sticky hover state. */
+.my-rooms .remembered:hover:not(:disabled){background:#f4f7ee;border-color:#cfddc9;filter:none}}
+@media(hover:hover) and (pointer:fine){@media(hover:hover) and (pointer:fine){.my-rooms .remembered:hover:not(:disabled){background:#dfead8;border-color:#a7b99e}}}
+.my-rooms .remembered:active:not(:disabled){background:#dfead8;border-color:#a7b99e}
+
+.pool-option{display:flex;align-items:center;gap:10px;min-height:44px;margin:14px 0 0;font-size:14px}.pool-option input{width:20px;height:20px;min-height:20px;margin:0;flex:none;accent-color:#9a773c}
+
+/* Free scoring prioritizes names, scores and exchanges over a table scene. */
+.simple-free-view{gap:10px;padding:0 0 4px!important;background:none!important;min-height:0}
+.simple-free-view .table-stage{min-height:0;overflow:hidden;padding:0}
+.simple-free-view .table-immersive-toggle{display:none}
+.simple-free-view .casual-stage{position:static;transform:none;align-self:flex-start;margin:0 0 8px;font-size:12px;background:none;border:0;padding:4px 0;color:#6b7b6b}
+.simple-free-view .poker-surface{display:block;max-width:none;width:100%;background:none!important;border-radius:0;overflow-y:auto;overscroll-behavior:contain;padding:0 2px 10px;scrollbar-width:thin;isolation:auto}
+.simple-free-view .table-center{position:static;transform:none;width:100%!important;gap:4px;margin:0 0 12px;color:#345540;border-radius:12px;border:1px solid #d1ddca;background:#fffef9;padding:10px}
+.simple-free-view .table-center>small,.simple-free-view .table-center .table-phase{color:#63765e;font-size:12px;border:0;background:none;padding:0}
+.simple-free-view .table-center>strong{color:#876329;font-size:24px}
+.simple-free-view .chip-pile{display:none}
+.simple-player-list{display:grid;gap:8px}
+.simple-free-view .table-seat{position:static;transform:none;translate:none;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 12px;width:100%!important;min-height:60px!important;height:auto!important;padding:12px!important;border:1px solid #d0dcc9!important;border-radius:12px;background:#fffef9!important;color:#355540;box-shadow:none!important;overflow:hidden}
+.simple-free-view .table-seat .seat-title{justify-content:flex-start;min-width:0}
+.simple-free-view .table-seat .seat-name{font-size:15px;color:#355540;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.simple-free-view .table-seat .my-name{color:#876329}
+.simple-free-view .table-seat .seat-number{font-size:11px;width:24px;height:24px;line-height:24px;border-radius:5px}
+.simple-free-view .table-seat strong{color:#355540;font-size:22px}
+.simple-free-view .table-seat strong small{font-size:11px}
+.simple-free-view .seat-status:empty{display:none}
+.simple-free-view .seat-status{grid-column:1/-1;color:#77846e;font-size:11px;text-align:left}
+.simple-score-records{margin-top:16px;border-top:1px solid #d3dfcc;padding-top:10px}
+.simple-score-records>button{border:0;background:none;padding:4px 0;margin-bottom:6px;font-size:13px;color:#476447}
+.simple-score-row{display:flex;gap:10px;align-items:baseline;font-size:12px;line-height:1.5;padding:7px 0;border-bottom:1px solid #e0e7da;color:#476447}
+.simple-score-row time{font-size:10px;color:#819079;flex:none}
+.simple-free-view .table-corner-actions{position:static;order:3;flex-shrink:0;padding:0;gap:8px;align-items:center;pointer-events:auto}
+.simple-free-view .free-corner-tools{gap:6px;flex-wrap:wrap}
+.simple-free-view .table-corner-actions button{box-shadow:none;min-height:44px;font-size:12px;padding:8px 10px}
+.simple-free-view .table-detail-menu{top:0;right:0}
+.simple-free-view .collection-focus.central-actions{position:static;left:auto;top:auto;bottom:auto!important;transform:none!important;width:100%!important;max-width:none!important;max-height:32%;overflow-y:auto;flex-shrink:0;order:2;margin:0;filter:none}
+.simple-free-view .collection-focus .holdem-actions{display:flex;flex-direction:column;gap:8px}
+.simple-free-view .collection-focus .collection-message{font-size:13px}
+.simple-free-view .collection-focus button{min-height:44px;height:auto;font-size:13px}
+.simple-free-view .collection-focus .seat-action-player{background:#fff8eb;padding:10px;border-radius:12px}
+@media(hover:hover) and (pointer:fine){@media(hover:hover) and (pointer:fine){.simple-free-view .table-seat:hover:not(:disabled){background:#f0f5e9!important}}}
+
+.casual-table .simple-free-view #freePool{background:#fffef9!important;border:1px solid #d1ddca!important;box-shadow:none!important;backdrop-filter:none!important;height:auto;min-height:0;padding:10px;cursor:default}
+.casual-table .simple-free-view #freePool[role=button]{cursor:pointer}
+.casual-table .simple-free-view #freePool>*{position:static!important;transform:none!important;color:#63765e;text-shadow:none!important;filter:none!important}
+.casual-table .simple-free-view #freePool>strong{color:#876329;font-size:24px}
+.simple-free-view .seat-status{font-size:11px!important;line-height:1.3!important}
+.simple-free-view .table-stage>.casual-stage{border:0!important;box-shadow:none;background:none!important}
+
+.simple-free-view{width:100%;max-width:850px;margin-inline:auto}
+.simple-free-view .table-seat .seat-title{display:flex;align-items:center;gap:7px}
+.simple-free-view .table-seat .seat-name{min-width:0;overflow-x:auto;text-overflow:clip;scrollbar-width:none}
+@media(orientation:landscape) and (max-height:600px){.casual-table .simple-free-view #freePool{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:4px 12px;padding:8px;text-align:left}.casual-table .simple-free-view #freePool>small:last-child{grid-column:1/-1;text-align:center;font-size:10px}.casual-table .simple-free-view #freePool>strong{font-size:20px}}
+
+.gift-popover .gift-submit-actions{position:sticky;bottom:0;z-index:2;background:#fff8eb;padding:10px 0 2px;gap:10px}
+.gift-popover .gift-submit-actions button{min-height:44px;font-size:14px}
+.input-keyboard .gift-popover .gift-presets,.input-keyboard .gift-popover .gift-records{display:none}
+.input-keyboard .gift-popover form>details:not(:focus-within){display:none}
+.input-keyboard .gift-popover{z-index:90!important;scroll-padding-bottom:66px}
+.input-keyboard .gift-popover .gift-submit-actions{margin-top:8px;padding-bottom:4px}
+
+/* View preference belongs to the right tools, leaving the tabletop clear. */
+.free-right-tools{display:flex;flex-direction:row;flex-wrap:nowrap;flex-shrink:0;align-items:center;gap:8px;pointer-events:auto}.free-right-tools button{white-space:nowrap}
+.simple-free-view .free-right-tools{flex-direction:row;align-items:center;gap:6px}
+@media(max-width:360px){.simple-free-view .table-corner-actions{gap:6px}.simple-free-view .table-corner-actions button{padding-inline:8px;font-size:11px}}
+
+/* The ledger has its own bounded scroll area; polling preserves reading position. */
+.simple-score-records{order:1;display:flex;flex-direction:column;flex:none;min-height:0;height:clamp(110px,24dvh,190px);max-height:28%;margin-top:0;padding-top:6px;overflow:hidden}
+.simple-score-records>button{align-self:flex-start;flex:none;margin-bottom:4px;font-size:12px}
+.simple-record-window{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin;padding-right:4px}
+.simple-score-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;align-items:baseline;font-size:11px;padding:5px 0;line-height:1.5}
+.simple-score-row time{font-size:9px;color:#75816e;white-space:nowrap}
+.record-name{font-weight:600}.record-from{color:#27659a}.record-to{color:#986023}
+.record-score{color:#171717!important;font-weight:750;white-space:nowrap}
+.record-exchange{min-width:0;overflow-wrap:anywhere}
+.free-trade-row{background:#fff8e8ed;border-radius:4px;padding:3px 5px;color:#405043;text-shadow:none}
+.free-trade-row>.record-exchange{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.free-trade-row>.record-exchange:before{content:none}
+.free-trade-row time{color:#6d7867}
+@media(orientation:landscape) and (max-height:600px){.simple-score-records{height:96px;max-height:30%}.simple-score-row{padding:3px 0}}
+
+/* Request text and actions stay separate, without an enclosing card. */
+.casual-table .collection-focus.central-actions{width:max-content;max-width:calc(100% - 24px);filter:none;background:none;border:0;box-shadow:none;padding:0}
+.collection-request-line{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%;background:none}
+.collection-request-line .collection-message{flex:0 1 auto;min-width:0;white-space:nowrap;overflow-x:auto;scrollbar-width:none;background:#fff8eb;padding:6px 8px;border-radius:6px;font-size:11px;line-height:1.5}
+.collection-request-line button,.simple-free-view .collection-request-line button{flex:none;width:auto;min-width:44px;min-height:44px;height:auto;padding:7px 10px;font-size:12px;margin:0}
+.collection-note{display:block;width:fit-content;max-width:100%;background:#fff8eb;padding:3px 8px;border-radius:4px;margin-top:6px;overflow-wrap:anywhere}
+.simple-free-view .collection-focus.central-actions{width:100%;padding:0}
+@media(orientation:landscape){.collection-focus.central-actions{left:50%;top:60%;bottom:auto!important;transform:translate(-50%,-50%)}}
+
+/* Allocate height to siblings explicitly; the player list cannot extend behind the ledger. */
+.simple-free-view .table-stage{display:flex;flex-direction:column;flex:1 1 0;height:auto;min-height:0;overflow:hidden}
+.simple-free-view .table-stage>.casual-stage{flex:none}
+.simple-free-view .poker-surface{flex:1 1 0;height:auto;min-height:0;overflow-y:auto;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.simple-free-view .simple-score-records{position:relative;flex:0 0 clamp(110px,24dvh,190px);height:auto;max-height:28%;background:#eef3ea}
+.simple-record-window,.sentence-records{position:relative;overflow-y:auto;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.sentence-records{max-height:55dvh;overscroll-behavior:contain;padding-right:4px}
+.sentence-records .simple-score-row{font-size:12px;line-height:1.6}
+.record-note{grid-column:1/-1;font-size:10px;color:#7a806f;overflow-wrap:anywhere}
+@media(orientation:landscape) and (max-height:600px){.simple-free-view .simple-score-records{flex-basis:96px;max-height:30%}}
+
+/* Touch lists scroll immediately; selection and native callouts belong to editors. */
+.simple-free-view .poker-surface,.simple-record-window,.sentence-records{touch-action:pan-y}
+.simple-free-view .table-seat{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.simple-free-view input,.simple-free-view textarea,.casual-popover input,.casual-popover textarea{user-select:text;-webkit-user-select:text;-webkit-touch-callout:none}
+
+/* Native controls never select their labels; ledger text remains copyable. */
+button,button *,[role="button"],[role="button"] *,summary,summary *,a,a *{user-select:none!important;-webkit-user-select:none!important;-webkit-touch-callout:none!important}
+dialog .sentence-records .simple-score-row,dialog .sentence-records .simple-score-row *{user-select:text;-webkit-user-select:text;-webkit-touch-callout:default}
+input,textarea,[contenteditable="true"]{user-select:text;-webkit-user-select:text;-webkit-touch-callout:none}
+
+/* Hall source and license notice stays outside the fixed game viewport. */
+.hall-footer{line-height:1.7;padding:0 8px;overflow-wrap:anywhere}
+.hall-footer .project-notice{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:6px}
+.hall-footer a{color:#426454;text-underline-offset:3px}
+.hall-footer a[hidden]{display:none}
+
+/* Compact player cards precede independent, collapsible pool and ledger sections. */
+.simple-free-view .table-stage{gap:8px}
+.simple-player-hint{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none;margin:0;font-size:12px;color:#526b55}
+.simple-player-hint span{font-size:10px;color:#74816c}
+.simple-free-view .poker-surface{display:flex;flex-direction:column;gap:10px;padding:0 2px 2px;overflow-y:auto}
+.simple-player-list{--player-columns:5;display:grid;grid-auto-flow:column;grid-template-rows:repeat(1,auto);grid-auto-columns:calc((100% - (var(--player-columns) - 1)*8px)/var(--player-columns));gap:8px;flex:none;min-height:0;padding:1px 0 6px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x;scrollbar-width:thin;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.simple-player-list[data-rows="2"]{grid-template-rows:repeat(2,auto)}
+.simple-free-view .simple-player-list .table-seat{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:5px;width:100%!important;min-height:78px!important;padding:8px!important;scroll-snap-align:start;text-align:left}
+.simple-free-view .simple-player-list .seat-title{gap:5px}
+.simple-free-view .simple-player-list .seat-name{font-size:13px;overflow:hidden;text-overflow:ellipsis}
+.simple-free-view .simple-player-list .seat-number{width:20px;height:22px;line-height:22px;font-size:10px;flex:none}
+.simple-free-view .simple-player-list strong{font-size:22px;line-height:1.1}
+.simple-free-view .simple-player-list .seat-status{font-size:10px!important;line-height:1.1!important}
+.simple-free-view .simple-pool-section,.simple-free-view .simple-score-records{position:relative;order:initial;margin:0;border:1px solid #d1ddca;border-radius:10px;background:#fffef9;padding:0;max-height:none;height:auto;overflow:hidden;flex:none}
+.simple-free-view details[data-simple-section]>summary{display:flex;align-items:center;gap:8px;padding:8px 10px;min-height:44px;font-size:13px;font-weight:600;cursor:pointer;list-style:none;color:#3e5c46}
+.simple-free-view details[data-simple-section]>summary::-webkit-details-marker{display:none}
+.simple-free-view details[data-simple-section]>summary:after{content:'⌄';margin-left:auto;font-size:16px}
+.simple-free-view details[data-simple-section][open]>summary:after{content:'⌃'}
+.simple-free-view details[data-simple-section]>summary span{font-size:11px;font-weight:400;color:#78836c}
+.simple-free-view .simple-pool-section #freePool{margin:0;border:0!important;border-top:1px solid #e1e8dc!important;border-radius:0;padding:8px;gap:4px}
+.simple-free-view .simple-pool-section #freePool>small:first-child,.simple-free-view .simple-pool-section #freePool>strong,.simple-free-view .simple-pool-section #freePool>.table-phase{display:none}
+.simple-free-view .simple-score-records[open]{display:flex;flex-direction:column;flex:1 0 110px;min-height:110px;max-height:320px}
+.simple-free-view .simple-score-records:not([open]){display:block}
+.simple-free-view .simple-score-records:not([open]) .simple-record-window{display:none}
+.simple-free-view .simple-record-window{padding:0 10px 6px;min-height:0;flex:1;overflow-y:auto}
+@media(max-width:600px){.simple-player-list{--player-columns:3}}
+@media(max-width:360px){.simple-player-list{--player-columns:2.6}.simple-player-hint span{font-size:9px}}
+@media(orientation:landscape) and (max-height:600px){.simple-free-view .simple-player-list .table-seat{min-height:68px!important;padding:6px!important}.simple-free-view .simple-score-records[open]{flex-basis:100px;min-height:100px}}
+
+/* A horizontal child must not inherit a vertical-only touch constraint. */
+.simple-free-view .poker-surface{touch-action:pan-x pan-y}
+.simple-player-hint{padding-right:42px}
+.simple-player-hint span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Native details content is not a flex item on every mobile browser. */
+.simple-free-view .simple-score-records[open]{display:block;flex:none;min-height:0;max-height:none}
+.simple-free-view .simple-record-window{height:clamp(100px,30dvh,280px);flex:none}
+@media(orientation:landscape) and (max-height:600px){.simple-free-view .simple-record-window{height:110px}}
+
+.simple-player-list{--player-columns:var(--card-column-count,5);grid-auto-columns:min(180px,calc((100% - (var(--player-columns) - 1)*8px)/var(--player-columns)))}
+@media(max-width:600px){.simple-player-list{--player-columns:min(3,var(--card-column-count,5))}}
+@media(max-width:360px){.simple-player-list{--player-columns:min(2.6,var(--card-column-count,5))}}
+
+/* Ledger sentences start with a bracketed timestamp. */
+.simple-score-row,.free-trade-row{grid-template-columns:auto minmax(0,1fr) auto}
+.simple-score-row time,.free-trade-row time{text-align:left}
+
+/* Compact cards share score baselines; the host has a distinct number marker. */
+.simple-free-view .poker-surface[data-density] .simple-player-list .table-seat{height:84px!important;min-height:84px!important;padding:10px 8px!important;gap:10px;justify-content:center}
+.simple-free-view .simple-player-list .seat-title{width:100%;min-height:22px;flex:none}
+.simple-free-view .simple-player-list .seat-name{flex:1 1 0!important;min-width:0;text-overflow:clip;overflow:hidden}
+.simple-free-view .simple-player-list .seat-name>span{display:inline-block;white-space:nowrap}
+.simple-free-view .simple-player-list .seat-status{display:none!important}
+.simple-free-view .simple-player-list strong{flex:none;line-height:24px!important}
+@media(prefers-reduced-motion:reduce){.simple-free-view .scrolling-name>span{animation:none}.simple-free-view .simple-player-list .seat-name{overflow-x:auto;scrollbar-width:none}}
+
+.record-action{font-weight:600;white-space:nowrap}
+.record-give{color:#227744}
+.record-collect{color:#b44837}
+
+.simple-free-view .simple-player-list .seat-number.host-number{background:linear-gradient(145deg,#f2c758,#dba333)!important;color:#4b3612!important;border:1px solid #aa7724!important;box-shadow:0 0 0 2px #f1d48b,0 1px 2px #60461b30;font-weight:800}
+
+/* A score stepper needs room for both controls and a readable amount. */
+.holdem-table-layout:not(.casual-layout) .seat-action-focus .holdem-actions{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus .holdem-actions>.row{grid-column:1/-1}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise{grid-column:1/-1;grid-row:auto}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise .row{grid-template-columns:minmax(0,1fr) 64px;gap:6px}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus .score-stepper{grid-template-columns:36px minmax(40px,1fr) 36px}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus .holdem-actions>.wide{grid-column:1/-1;justify-self:center;width:auto;min-width:80px}
+@media(orientation:landscape){.holdem-table-layout:not(.casual-layout) .poker-surface[data-own-turn="true"] .table-status-stack{visibility:hidden}}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus .holdem-actions{container-type:inline-size}
+@container(max-width:210px){
+ .holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise .row{grid-template-columns:minmax(0,1fr)}
+ .holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise .row>button{justify-self:center;width:auto;min-width:64px}
+}
+
+/* Keyboard forms use one visual-viewport coordinate system, never a second bottom inset. */
+html.input-keyboard .seat-action-focus:has(input),
+html.input-keyboard .casual-popover:has(input),
+html.input-keyboard dialog[open]{
+ position:fixed!important;
+ top:calc(var(--table-viewport-top,0px) + var(--table-viewport-height,100dvh) - 8px)!important;
+ bottom:auto!important;left:calc(var(--table-viewport-left,0px) + var(--table-viewport-width,100vw)/2)!important;
+ transform:translate(-50%,-100%)!important;
+ max-height:calc(var(--table-viewport-height,100dvh) - 24px)!important;
+ overflow-y:auto!important;overscroll-behavior:contain;scroll-padding:12px;
+ min-height:0;touch-action:pan-y;
+}
+html.input-keyboard .seat-action-focus:has(input){display:block;max-width:calc(var(--table-viewport-width,100vw) - 24px)!important;width:min(300px,calc(var(--table-viewport-width,100vw) - 24px))!important;filter:none}
+html.input-keyboard .seat-action-player{min-height:0;background:#fff7e7!important}
+html.input-keyboard .seat-action-focus input{font-size:18px;min-width:0}
+
+/* App background is edge-to-edge; only readable and tappable content observes safe areas. */
+html.host-app{--content-safe-top:max(env(safe-area-inset-top,0px),var(--host-safe-top,0px));--content-safe-bottom:max(env(safe-area-inset-bottom,0px),var(--host-safe-bottom,0px));--content-safe-left:max(env(safe-area-inset-left,0px),var(--host-safe-left,0px));--content-safe-right:max(env(safe-area-inset-right,0px),var(--host-safe-right,0px))}
+.host-app body:not(.table-immersive) .shell{padding-top:calc(var(--content-safe-top) + 12px);padding-bottom:calc(var(--content-safe-bottom) + 12px);padding-left:max(16px,var(--content-safe-left));padding-right:max(16px,var(--content-safe-right))}
+.host-app .holdem-table.table-immersive .shell{padding:0}
+.host-app .table-immersive .table-stage{padding:var(--content-safe-top) var(--content-safe-right) var(--content-safe-bottom) var(--content-safe-left)}
+.host-app .holdem-table.table-immersive .table-immersive-toggle{top:max(10px,calc(var(--content-safe-top) + 6px));left:max(10px,calc(var(--content-safe-left) + 8px))}
+.host-app .holdem-table.table-immersive .table-detail-menu{top:max(10px,calc(var(--content-safe-top) + 6px));right:max(10px,calc(var(--content-safe-right) + 8px))}
+.host-app .holdem-table.table-immersive .table-stage .holdem-steps{top:calc(var(--content-safe-top) + 15px)}
+.host-app .holdem-table.table-immersive .table-corner-actions{bottom:max(10px,calc(var(--content-safe-bottom) + 6px));padding-left:max(10px,calc(var(--content-safe-left) + 8px));padding-right:max(10px,calc(var(--content-safe-right) + 8px))}
+
+@media(orientation:landscape) and (max-height:600px){
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .seat-action-focus.central-actions{left:50%;width:min(300px,38%)}
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions .seat-action-player{padding:6px;min-width:0}
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions button,.host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions input{height:32px;min-height:32px;padding:4px 6px;font-size:12px}
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions{gap:5px}
+}
+
+/* Current-hand actions use only the upper free area; no lower feed or added panel. */
+.poker-action-feed{position:absolute;left:50%;transform:translateX(-50%);display:grid;gap:3px;z-index:0;pointer-events:none;color:#f8edce;font-size:10px;line-height:16px;text-shadow:0 1px 2px #071e19;max-width:60%;overflow:hidden}
+.poker-action-feed[hidden],.poker-action-row[hidden]{display:none!important}
+.poker-action-row{display:flex;gap:5px;white-space:nowrap;min-width:0;height:16px}
+.poker-action-row time{color:#dfd8bb;font-size:9px;flex:none}
+.poker-action-row>span{overflow:hidden;text-overflow:ellipsis}
+.poker-action-row b{color:#d9eccd;font-weight:600}.poker-action-row strong{color:#ffe0a4;font-weight:700}
+.input-keyboard .poker-action-feed,.selecting-players .poker-action-feed{display:none!important}
+
+.poker-action-row>span{display:flex;gap:3px;min-width:0;flex:1;align-items:baseline}
+.poker-action-row>span>b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:0 1 auto}
+.poker-action-row>span>span,.poker-action-row strong{flex:none;white-space:nowrap}
+
+.hall-footer #appVersion:not([hidden]){display:block;font-size:11px;margin-top:6px;color:#60776b}
+
+/* Selection belongs to the full score ledger, never to on-table labels. */
+html,body,body *{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+input,textarea,[contenteditable="true"]{user-select:text;-webkit-user-select:text;-webkit-touch-callout:none}
+dialog .sentence-records .simple-score-row,dialog .sentence-records .simple-score-row *{user-select:text;-webkit-user-select:text;-webkit-touch-callout:default}
+.poker-action-feed{align-items:start;justify-items:stretch;text-align:left;box-sizing:border-box}
+.poker-action-row{display:grid;grid-template-columns:58px minmax(0,1fr);width:100%;max-width:100%;align-items:baseline;justify-content:start}
+.poker-action-row>span{justify-content:flex-start}
+.host-app .holdem-table.table-immersive .table-stage{padding-top:calc(var(--content-safe-top) + 46px)}
+@media(orientation:portrait){
+ .host-app .holdem-table:not(.casual-table).table-immersive .holdem-table-layout{background-image:url('./assets/holdem-scene-iphone-v4.webp');background-size:cover}
+}
+
+/* A normal room header already consumes the safe inset: don't apply it twice. */
+.host-app .holdem-table:not(.table-immersive) .table-immersive-toggle,
+.host-app .holdem-table:not(.table-immersive) .table-detail-menu{top:10px}
+.host-app .holdem-table:not(.table-immersive) .table-stage .holdem-steps{top:15px}
+.host-app .holdem-table:not(.table-immersive) .casual-stage{top:15px}
+@media(orientation:portrait){
+ .host-app .holdem-table:not(.casual-table) .holdem-table-layout{background-image:url('./assets/holdem-scene-iphone-v4.webp');background-size:cover}
+}
+
+@media(orientation:portrait){.host-app .holdem-table:not(.casual-table) .table-center{top:51%}}
+
+/* Stable timestamp columns: the block is centered, its contents read left to right. */
+.poker-action-row time,.free-trade-row time,.simple-score-row time{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;text-align:left;white-space:nowrap}
+.poker-action-row time{width:58px}
+
+/* A clear decision area: opaque controls, readable type, no table text behind them. */
+.holdem-table .seat-action-focus.central-actions{width:min(440px,calc(100% - 40px));max-height:calc(100% - 80px)}
+.holdem-table .central-actions .seat-action-player{background:#fff4de;border-color:#d7bc81;backdrop-filter:none;padding:12px}
+.holdem-table .central-actions button{font-size:18px;min-height:46px;height:auto;padding:10px 12px;line-height:1.2}
+.holdem-table .central-actions input{font-size:22px;height:46px;min-height:46px}
+.holdem-table .central-actions .holdem-actions{gap:10px}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise .row{grid-template-columns:minmax(0,1fr)}
+.holdem-table-layout:not(.casual-layout) .seat-action-focus #holdemRaise .bet-submit-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.holdem-table .seat-action-focus .all-in{background:#7951a3;color:#fff;border-color:#65408d}
+@media(hover:hover) and (pointer:fine){.holdem-table .seat-action-focus .all-in:hover:not(:disabled){background:#69428f}}
+.holdem-table-layout:has(.central-actions) .table-status-stack{visibility:hidden}
+.holdem-table-layout:has(.seat-action-helper) .table-status-stack{visibility:hidden}
+.holdem-table .seat-action-helper{background:transparent;border:0;padding:0;display:grid;justify-items:center;gap:12px}
+.holdem-table .seat-action-helper .action-role{color:#fff4d5;font-size:18px;line-height:1.4;text-align:center;text-shadow:0 2px 3px #102e24;margin:0}
+.holdem-table .seat-action-helper .helper-dock{width:100%;max-width:280px}
+.holdem-table .seat-action-helper button{font-size:22px;min-height:54px}
+.holdem-table-layout:has(.central-actions)::after{content:'';position:absolute;inset:0;background:#06191126;z-index:2;pointer-events:none}
+.holdem-table .seat-action-focus{z-index:4}
+.holdem-table .table-corner-actions,.holdem-table .table-detail-menu,.holdem-table .table-immersive-toggle,.holdem-table .holdem-steps,.holdem-table .casual-stage{z-index:5}
+@media(orientation:portrait) and (max-height:700px){.holdem-table .central-actions button{font-size:16px;min-height:40px;padding:8px}.holdem-table .central-actions input{font-size:20px;height:40px;min-height:40px}.holdem-table .central-actions .seat-action-player{padding:8px}.holdem-table .central-actions .holdem-actions{gap:6px}}
+@media(orientation:landscape) and (max-height:600px){.holdem-table .seat-action-focus.central-actions{width:min(360px,44%)}.holdem-table .central-actions button{font-size:16px;min-height:38px;padding:7px}.holdem-table .central-actions input{font-size:20px;min-height:38px;height:38px}.holdem-table .central-actions .seat-action-player{padding:8px}.holdem-table .central-actions .holdem-actions{gap:6px}.holdem-table .seat-action-helper button{min-height:46px;font-size:20px}}
+.holdem-table .central-actions button{white-space:nowrap;padding:10px 6px}
+.holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{display:block;grid-column:1/-1;font-size:20px;line-height:1.3;margin:0;color:#345540;text-align:center}
+@container(max-width:210px){.holdem-table .central-actions button{font-size:16px;padding:8px 3px}.holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{font-size:17px}}
+
+@container(max-width:140px){.holdem-table-layout:not(.casual-layout) .seat-action-focus .score-stepper{grid-template-columns:24px minmax(28px,1fr) 24px;gap:3px}.holdem-table .central-actions .score-stepper input{font-size:18px;padding:3px 0}}
+/* Landscape uses the narrow clear strip between the two seat rows. */
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table .holdem-table-layout .seat-action-focus.central-actions{left:50%;width:min(740px,calc(100% - 40px))}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions{display:flex;align-items:center;gap:8px;container-type:normal}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{display:none}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions>.row,.holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise,.holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .row,.holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .bet-submit-row{display:contents}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions button{flex:1;min-width:0;font-size:16px;min-height:38px;height:38px;padding:6px}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper{flex:2;min-width:120px;grid-template-columns:30px minmax(36px,1fr) 30px}
+ .holdem-table-layout:not(.casual-layout) .central-actions .seat-action-player{padding:6px}
+ .holdem-table .seat-action-helper{display:flex;justify-content:center;gap:14px}
+ .holdem-table .seat-action-helper .helper-dock{flex:0 1 220px}
+}
+@media(orientation:landscape) and (max-height:600px){
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .seat-action-focus.central-actions{width:min(740px,calc(100% - 40px))}
+ .host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions button,.host-app .holdem-table.table-immersive .holdem-table-layout:not(.casual-layout) .central-actions input{font-size:16px;min-height:38px;height:38px;padding:6px}
+ .holdem-table-layout:not(.casual-layout):has(.central-actions) .table-center{left:50%;top:20px;width:140px}
+ .holdem-table-layout:not(.casual-layout):has(.central-actions) .table-center>small:first-of-type{display:none}
+}
+.host-app .holdem-table.table-immersive:not(.simple-free-view) .casual-stage{top:calc(var(--content-safe-top) + 15px)}
+.theme-three-card .central-actions #casualCompare{white-space:normal;overflow-wrap:anywhere;padding:8px 3px}
+/* Three-stage context: the current phase stays in the middle of a pill-shaped track. */
+.holdem-table .table-stage .holdem-steps,.holdem-table.table-immersive .table-stage .holdem-steps{display:flex;grid-template-columns:none;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;touch-action:pan-x;height:36px;width:min(360px,calc(100% - 116px));padding:3px 0;gap:0;border-radius:999px;box-sizing:border-box;background:#fff7e7;border:1px solid #dbc795}
+.holdem-steps::-webkit-scrollbar{display:none}
+.holdem-table .table-stage .holdem-steps li{flex:0 0 33.333%;height:28px;font-size:13px;font-weight:600;line-height:28px;scroll-snap-align:center;border-radius:999px;color:#395a4b}
+.holdem-table .table-stage .holdem-steps li.current{font-size:16px;font-weight:800;color:#34220d;background:#f0c76c}
+.holdem-table .table-stage .holdem-steps .progress-spacer{visibility:hidden}
+.score-jump-row{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.holdem-table .central-actions .score-jump-row button{min-height:36px;height:36px;font-size:17px;padding:6px;color:#355840;background:#e9efdf}
+.activity-player{color:#28715f;font-weight:700}
+.activity-action{font-weight:700;border-radius:3px;background:#b8914320;padding:1px 3px;color:#896122}
+.activity-action.activity-danger{color:#af493b;background:#af493b14}
+.activity-action.activity-accent{color:#74519a;background:#74519a14}
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper{grid-template-columns:30px 30px minmax(36px,1fr) 30px 30px;min-width:184px}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row{display:contents}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row button:first-child{grid-column:1;grid-row:1}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>.score-step-button:first-child{grid-column:2;grid-row:1}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>input{grid-column:3;grid-row:1}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>.score-step-button:nth-child(3){grid-column:4;grid-row:1}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row button:last-child{grid-column:5;grid-row:1}
+}
+.holdem-table .seat-action-focus.central-actions{container-type:inline-size}
+@container(max-width:110px){
+ .holdem-table .central-actions .seat-action-player{padding:3px}
+ .holdem-table .central-actions button{font-size:14px;padding:6px 1px}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{font-size:14px}
+ .holdem-table-layout:not(.casual-layout) .seat-action-focus .score-stepper{grid-template-columns:24px minmax(0,1fr) 24px;gap:3px}
+ .holdem-table .central-actions .score-stepper input{font-size:16px;padding:3px 0}
+ .holdem-table .central-actions .score-jump-row button{font-size:15px}
+}
+.holdem-table .table-stage .holdem-steps,.holdem-table.table-immersive .table-stage .holdem-steps{top:max(10px,env(safe-area-inset-top))}
+.host-app .holdem-table.table-immersive .table-stage .holdem-steps{top:calc(var(--content-safe-top) + 5px)}
+.host-app .holdem-table:not(.table-immersive) .table-stage .holdem-steps{top:9px}
+
+/* Decision controls keep readable touch targets even over dense seat rows. */
+.holdem-table .seat-action-focus.central-actions{overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin}
+.holdem-table .central-actions .seat-action-player{box-shadow:0 8px 28px #081f2440}
+.holdem-table .poker-basics-focus{z-index:4;gap:10px}
+.holdem-table .poker-basics-focus button{min-height:44px;font-size:18px;padding:8px 12px;box-shadow:0 3px 8px #17282040}
+.holdem-table .seat-action-helper .action-role{background:#233c32;border:1px solid #e4cc91;border-radius:12px;padding:8px 18px;text-shadow:none;max-width:100%}
+@media(orientation:landscape) and (max-height:600px){.casual-table .central-actions .holdem-actions{gap:8px}.casual-table .seat-action-focus.central-actions button{min-height:40px;height:auto;font-size:17px}.casual-table .central-actions input{min-height:40px;height:40px;font-size:20px}}
+
+.casual-table .central-actions .holdem-actions>h2{display:block;grid-column:1/-1;font-size:20px;line-height:1.3;text-align:center;margin:0 0 4px;color:#345540}
+.holdem-table .seat-action-focus:has(.seat-action-helper):not(:has(.seat-action-player)){overflow:visible;pointer-events:none}
+.holdem-table .seat-action-helper button{pointer-events:auto}
+@media(orientation:landscape) and (max-height:600px){.casual-table .central-actions .holdem-actions>h2{font-size:17px;margin:0}}
+
+.holdem-table-layout:has(.seat-action-player .holdem-actions) .table-center:not(.free-center){visibility:hidden}
+.holdem-table .central-actions .action-pot-context{display:inline-block;color:#6a552b;font-size:14px;font-weight:600;margin-left:12px;white-space:nowrap}
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{display:block;flex:none;width:74px;font-size:14px}
+ .holdem-table .central-actions .action-pot-context{display:block;margin-left:0;font-size:12px}
+}
+
+.holdem-table .seat-action-focus .seat-action-helper .action-role{background:#233c32;color:#fff4d5;border:1px solid #e4cc91;border-radius:12px;padding:8px 18px;font-size:18px;white-space:normal;line-height:1.3;text-shadow:none}
+.holdem-table .seat-action-focus .seat-action-helper button{font-size:22px;min-height:54px;height:auto;padding:12px 24px;min-width:180px;max-width:100%;white-space:normal}
+.holdem-table-layout:has(.table-settlement-center) .poker-action-feed{display:none!important}
+.holdem-table .table-settlement-center p{font-size:15px;line-height:1.45}
+.holdem-table .table-settlement-center .settlement-selected{font-size:12px}
+@media(orientation:landscape) and (max-height:600px){.holdem-table .seat-action-focus .seat-action-helper button{min-height:44px;font-size:19px;padding:8px 18px}.holdem-table .seat-action-focus .seat-action-helper .action-role{font-size:16px;padding:5px 12px}}
+
+@media(orientation:portrait) and (max-height:700px){
+ .holdem-table .table-center.table-settlement-center{gap:4px}
+ .holdem-table .table-settlement-center p{font-size:13px;margin:0}
+ .holdem-table .table-settlement-center .chip-pile{display:none}
+ .holdem-table .table-center.table-settlement-center>strong{font-size:25px}
+}
+
+/* Override the older, more specific keyboard-bottom rule with visual-viewport placement. */
+html.input-keyboard .holdem-table .seat-action-focus:has(input){
+ position:fixed!important;
+ top:calc(var(--table-viewport-top,0px) + var(--table-viewport-height,100dvh) - 8px)!important;
+ bottom:auto!important;
+ left:calc(var(--table-viewport-left,0px) + var(--table-viewport-width,100vw)/2)!important;
+ transform:translate(-50%,-100%)!important;
+ max-height:calc(var(--table-viewport-height,100dvh) - 24px)!important;
+ overflow-y:auto!important;
+}
+
+/* Hall sections use one compact, non-interactive identity. */
+.hall-section-title{display:flex;align-items:center;gap:10px;margin:0;min-width:0;color:#234d3c;font-size:21px;line-height:1.35;font-weight:750;letter-spacing:.02em}
+.hall-section-icon{display:grid;place-items:center;width:34px;height:34px;flex:none;border:1px solid #d6b77c;border-radius:10px;background:#f5e6c6;color:#355740;box-shadow:0 2px 0 #dfcc9f}
+.hall-section-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hall-section-label{min-width:0;position:relative;padding-bottom:6px;overflow-wrap:anywhere}
+.hall-section-label::after{content:'';position:absolute;left:0;bottom:0;width:26px;height:3px;border-radius:2px;background:#c9a55f}
+.hall-section-heading{align-items:center;gap:12px;margin-bottom:14px}
+.hall-section-heading>small{flex:none;white-space:nowrap;background:#edf2e8;border:1px solid #d4dfce;border-radius:20px;padding:4px 9px;color:#58725c;font-size:12px}
+.hall-section-intro{margin:10px 0 16px}
+.hall-tools .hall-section-title{margin-bottom:10px}
+.entry .hall-section-title{margin-bottom:18px}
+@media(max-width:600px){.hall-section-title{font-size:20px;gap:9px}.hall-section-icon{width:32px;height:32px}.hall-section-heading{gap:8px}.hall-section-heading>small{padding:3px 7px;font-size:11px}}
+
+.game-catalog #gameSearch{margin-top:0}
+/* Software-keyboard editing is a separate layout, including landscape. */
+@media(orientation:landscape) and (max-height:600px){
+ html.input-keyboard .holdem-table .seat-action-focus:has(input){width:min(740px,calc(var(--table-viewport-width,100vw) - var(--host-safe-left,0px) - var(--host-safe-right,0px) - 24px))!important;max-width:calc(var(--table-viewport-width,100vw) - 24px)!important}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions{display:grid;grid-template-columns:minmax(110px,1fr) minmax(280px,2.4fr);gap:8px}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{grid-column:1/-1;display:block;width:auto;font-size:18px}
+ html.input-keyboard .holdem-table .central-actions .action-pot-context{display:inline-block;margin-left:12px;font-size:14px}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions>.row{display:grid;grid-column:1;grid-template-columns:1fr;align-self:stretch;gap:6px}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise{display:grid;grid-column:2;grid-template-columns:minmax(170px,1.5fr) minmax(110px,1fr);gap:8px;align-items:center}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .row{display:block;grid-column:1;margin:0}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .bet-submit-row{display:grid;grid-column:2;grid-template-columns:1fr;gap:6px;margin:0}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions button{min-height:44px;height:44px;padding:6px;font-size:17px}
+ html.input-keyboard .holdem-table .central-actions .score-stepper{min-width:0;grid-template-columns:36px minmax(0,1fr) 36px}
+ html.input-keyboard .holdem-table .central-actions input{width:100%;min-width:0;height:44px;min-height:44px}
+ html.input-keyboard .casual-table .seat-action-focus:has(input){width:min(460px,calc(var(--table-viewport-width,100vw) - 24px))!important}
+ html.input-keyboard .casual-table .central-actions .holdem-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ html.input-keyboard .casual-table .central-actions .holdem-actions>h2{grid-column:1/-1}
+}
+@media(orientation:landscape) and (max-height:600px){
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper{display:grid;grid-template-columns:36px minmax(0,1fr) 36px;min-width:0}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>.score-step-button:first-child{grid-column:1;grid-row:1}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>input{grid-column:2;grid-row:1}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper>.score-step-button:nth-child(3){grid-column:3;grid-row:1}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row{display:grid;grid-column:1/-1;grid-row:2;grid-template-columns:1fr 1fr;gap:6px}
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row button:first-child,
+ html.input-keyboard .holdem-table-layout:not(.casual-layout) .central-actions .score-jump-row button:last-child{grid-column:auto;grid-row:auto}
+}
+/* Keyboard landscape: amount on the left, both poker actions on the right. */
+@media (orientation:landscape){
+ html.input-keyboard .casual-table .central-actions .holdem-actions{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:6px 8px}
+ html.input-keyboard .casual-table .central-actions .holdem-actions>h2{grid-column:1/-1;grid-row:1}
+ html.input-keyboard .casual-table .central-actions #casualBet,
+ html.input-keyboard .casual-table .central-actions #casualBet>.row{display:contents}
+ html.input-keyboard .casual-table .central-actions #casualBet .score-stepper{grid-column:1;grid-row:2/4;min-width:0;align-self:start}
+ html.input-keyboard .casual-table .central-actions #casualBet .primary{grid-column:2;grid-row:2;margin:0;min-height:44px}
+ html.input-keyboard .casual-table .central-actions #casualCompare{grid-column:2;grid-row:3;margin:0;min-height:44px;width:100%}
+}
+
+/* Editing is a separate upper screen, never a resized or clipped poker table. */
+html.input-keyboard body{top:0!important;left:0!important;height:100dvh!important}
+/* Keyboard docking retains the existing card appearance and stacking context. */
+[data-keyboard-docked]{overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scroll-padding:12px}
+
+/* Transaction controls need room for one amount row; settings remain plain inputs. */
+.casual-layout .gift-popover{width:min(340px,calc(100% - 24px));box-sizing:border-box;overflow-x:hidden;transform:none;padding:14px}
+.casual-layout .gift-popover form{width:100%;min-width:0;margin:0}
+.casual-layout .gift-popover .gift-submit-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0}
+.casual-layout .gift-popover .gift-submit-actions button{width:100%;min-width:0;margin:0}
+.casual-layout .gift-popover .gift-presets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
+.casual-layout .gift-popover .gift-presets button{min-width:0;width:100%;margin:0}
+.casual-layout .seat-action-focus:has(#casualReady){left:50%;width:max-content;max-width:calc(100% - 24px);transform:translateX(-50%);justify-items:center;filter:none}
+.casual-layout .seat-action-focus .dock-wait:has(#casualReady){display:flex;justify-content:center;padding:0;border:0;background:none}
+
+.casual-layout .gift-popover .seat-history-heading>b{font-size:16px;line-height:1.3}
+.casual-layout .gift-popover label,.casual-layout .gift-popover summary{font-size:13px;line-height:1.4}
+.casual-layout .gift-popover .rules{font-size:12px;overflow-wrap:anywhere}
+.casual-layout .gift-popover .gift-submit-actions button{font-size:18px}
+.casual-layout .gift-popover .gift-presets button{font-size:14px}
+
+.settings>div{min-width:0;display:flex;flex-direction:column}
+/* Align paired inputs by placing spare space above short labels, not below. */
+.settings{row-gap:12px}
+/* Separate adjacent field grids by the same gap as rows inside each grid. */
+#create>.settings+.settings{margin-top:12px}
+.settings>div>label{min-height:0;margin:auto 0 5px;line-height:1.6}
+
+/* Touch feedback must not leave WebKit's gray tap overlay behind. */
+button,a,[role=button],summary,input,select,textarea{-webkit-tap-highlight-color:transparent}
+@media(hover:none){button{transition:background-color .12s,color .12s,border-color .12s}input:focus,select:focus{box-shadow:none}}
+.seat-action-focus[data-keyboard-docked]{filter:none;transition:none}
+
+/* Quiet shared service/hall artwork; the table remains its own visual scene. */
+body:not(.in-room){background:#f1f3eb}
+body:not(.in-room)>.shell{position:relative;z-index:1}
+body:not(.in-room)::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(#f1f3eb66,#f1f3eba6),url('assets/service-home-background-v2.webp') center center / cover no-repeat}
+@media(min-width:801px){body:not(.in-room)::before{background-size:auto,100% auto;background-position:center,center 42%}}
+
+/* Detail menus stay compact without shrinking touch targets. */
+.table-detail-menu .table-detail-tools{width:min(190px,calc(100vw - 28px));box-sizing:border-box;max-height:calc(100dvh - 150px);overflow-y:auto;overscroll-behavior:contain;}
+.table-detail-menu .table-detail-tools button{font-size:14px;line-height:1.4;min-height:44px;padding:9px 10px;overflow-wrap:anywhere;}
+.table-detail-menu .table-detail-tools select{display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box;font-family:inherit;font-weight:600;font-size:14px!important;line-height:1.4;min-height:44px;padding:8px 28px;text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='%23244d3d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;background-size:16px 16px;border:1px solid #c6d3bf;border-radius:12px;background-color:#fffdf3;color:#244d3d;}
+.table-detail-menu .table-detail-tools select option{font-size:14px;text-align:center;}
+
+/* Rail coordinates belong to the scene, shared by seats and on-felt records. */
+.holdem-table-layout{--scene-width:1024;--scene-height:1536;--scene-left:.11;--scene-right:.89;--scene-top:.075;--scene-bottom:.88}
+.theme-three-card .holdem-table-layout{--scene-left:.105;--scene-right:.895;--scene-top:.055;--scene-bottom:.91}
+.theme-free .holdem-table-layout{--scene-left:.145;--scene-right:.855;--scene-top:.067;--scene-bottom:.902}
+.poker-action-feed{max-width:none;margin:0;padding:0}
+@media(orientation:portrait){.host-app .holdem-table:not(.casual-table) .holdem-table-layout{--scene-width:852;--scene-height:1846;--scene-left:.16;--scene-right:.84;--scene-top:.163;--scene-bottom:.855}}
+@media(orientation:landscape){
+ .holdem-table-layout{--scene-width:1536;--scene-height:1024;--scene-left:.095;--scene-right:.905;--scene-top:.16;--scene-bottom:.79}
+ .theme-three-card .holdem-table-layout{--scene-left:.09;--scene-right:.91;--scene-top:.17;--scene-bottom:.79}
+ .theme-free .holdem-table-layout{--scene-left:.105;--scene-right:.895;--scene-top:.15;--scene-bottom:.78}
+}
+
+/* Safe insets belong to tools, never to the coordinate surface beneath the scene. */
+.host-app .holdem-table.table-immersive:not(.simple-free-view) .table-stage{padding:0}
+.casual-table .holdem-table-layout{background-image:var(--table-scene),linear-gradient(90deg,#24190f,#3b291a 50%,#24190f);background-size:100% calc(100% - var(--scene-inset,0px) * 2),100% 100%;background-position:center;background-repeat:no-repeat}
+/* Short landscape cards must contain every visible line used to measure their rail slot. */
+@media(orientation:landscape) and (max-height:600px){
+ .holdem-table-layout .poker-surface[data-density] .table-seat{height:auto!important;min-height:56px!important}
+}
+
+/* Short landscape uses the available width so no action is clipped or buried. */
+@media(orientation:landscape) and (max-height:600px){
+ .theme-three-card .central-actions .holdem-actions{display:grid;grid-template-columns:minmax(0,1fr) 88px 110px;gap:8px;align-items:center}
+ .theme-three-card .central-actions .holdem-actions>h2{grid-column:1/-1;display:flex;align-items:baseline;justify-content:center;gap:10px;margin:0;font-size:18px}
+ .theme-three-card .central-actions .holdem-actions>h2 .action-pot-context{display:inline;font-size:13px;margin:0}
+ .theme-three-card .central-actions #casualBet .score-stepper{grid-column:1!important;grid-row:2!important}
+ .theme-three-card .central-actions #casualBet>label{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+ .theme-three-card .central-actions #casualBet .primary{grid-column:2;grid-row:2;width:100%;margin:0;min-height:44px}
+ .theme-three-card .central-actions #casualCompare{grid-column:3;grid-row:2;width:100%;margin:0;min-height:44px}
+ .theme-three-card .poker-basics-focus .poker-basics{display:grid;grid-template-columns:1fr;gap:8px}
+ .theme-three-card .poker-basics-focus button{width:100%;min-height:44px;margin:0}
+}
+
+/* A wide desktop room is also landscape; don't crop its submit controls. */
+@media(orientation:landscape) and (min-height:601px){
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions{display:flex;align-items:center;gap:10px}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions h2{display:none}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions>.row,
+ .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise,
+ .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .row,
+ .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise .bet-submit-row{display:contents}
+ .holdem-table-layout:not(.casual-layout) .central-actions .holdem-actions button{flex:1;min-width:0;min-height:44px;margin:0}
+ .holdem-table-layout:not(.casual-layout) .central-actions .score-stepper{flex:2.5;min-width:180px}
+ .holdem-table-layout:not(.casual-layout) .central-actions #holdemRaise label{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+}
+
+/* Small panels keep the amount and submit controls ahead of optional detail. */
+.casual-layout .gift-popover:not([data-keyboard-docked]) .gift-submit-actions{position:static}
+.casual-layout .gift-popover.compact-gift .gift-presets,
+.casual-layout .gift-popover.compact-gift form>.rules{display:none}
+.casual-layout .gift-popover.compact-gift{padding:10px}
+
+.casual-layout .gift-popover.compact-gift .seat-history-heading{margin:0 0 4px}
+.casual-layout .gift-popover.compact-gift .seat-history-heading button{min-height:28px;height:28px;padding:0 6px}
+.casual-layout .gift-popover.compact-gift form>label{margin:0 0 4px;line-height:16px}
+.casual-layout .gift-popover.compact-gift .gift-submit-actions{margin:6px 0 0;padding:0;gap:8px}
+.casual-layout .gift-popover.compact-gift .gift-submit-actions button{height:44px;min-height:44px;padding:6px;font-size:17px}

@@ -1,0 +1,35 @@
+name: Desktop packages
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            arch: arm64
+          - os: windows-latest
+            arch: x86_64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install pyinstaller==6.16.0 pillow==11.3.0 sherpa-onnx==1.13.8 numpy==2.3.3
+      - run: python scripts/versioning.py
+      - run: python scripts/build-desktop.py --arch ${{ matrix.arch }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: desktop-${{ matrix.os }}-${{ matrix.arch }}
+          path: |
+            dist/**/*.zip
+            dist/**/*.sha256
+            dist/**/smoke-report.json
+            dist/**/build-info.json
+          if-no-files-found: error

@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "id": "amount",
+      "text": "二号玩家加注一千二百八十分",
+      "pieces": [
+        "二号玩家加注",
+        "一千二百八十分"
+      ]
+    },
+    {
+      "id": "prefix0",
+      "text": "一号玩家给了二号玩家一分"
+    },
+    {
+      "id": "prefix1",
+      "text": "三号玩家跟注一百分"
+    },
+    {
+      "id": "prefix2",
+      "text": "四号玩家闷注一百分"
+    }
+  ],
+  "examples": [
+    {
+      "id": "context-0",
+      "parts": [
+        [
+          "prefix0",
+          0
+        ],
+        [
+          "amount",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "context-1",
+      "parts": [
+        [
+          "prefix1",
+          0
+        ],
+        [
+          "amount",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "context-2",
+      "parts": [
+        [
+          "prefix2",
+          0
+        ],
+        [
+          "amount",
+          1
+        ]
+      ]
+    }
+  ]
+}
